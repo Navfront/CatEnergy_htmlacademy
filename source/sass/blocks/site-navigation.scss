@@ -1,0 +1,50 @@
+.site-navigation {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  align-items: center;
+}
+
+.site-navigation__top-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.site-navigation__logo {
+  flex-grow: 1;
+}
+
+.site-navigation__button-burger {
+  width: 24px;
+  height: 17.5px;
+}
+
+.site-navigation__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: none;
+
+  // .site-navigation__list--active
+
+  &--active {
+    display: block;
+  }
+}
+
+.site-navigation__item {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid $color-grey-130;
+
+  &:last-child {
+    border-bottom: 1px solid $color-grey-130;
+  }
+}
+
+.site-navigation__link {
+  color: $color-black;
+  text-transform: uppercase;
+}

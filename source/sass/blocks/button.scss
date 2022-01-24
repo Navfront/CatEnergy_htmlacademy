@@ -1,0 +1,43 @@
+.button {
+  display: block;
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Oswald;
+}
+
+.button--success {
+  color: $color-white;
+  background-color: $color-green-100;
+  padding: 12px;
+}
+
+.button--arrow {
+  display: inline-block;
+  position: relative;
+  padding-right: 45px;
+  color: $color-black;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    right: 20px;
+    width: 18px;
+    height: 2px;
+    background-color: $color-black;
+  }
+  &::after {
+    right: 0px;
+    border: 10px solid transparent;
+    border-top-width: 8px;
+    border-bottom-width: 8px;
+    border-left-color: $color-black;
+  }
+}

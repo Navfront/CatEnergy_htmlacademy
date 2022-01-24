@@ -2,32 +2,40 @@
 <html lang="ru" class="page">
   <head>
     <meta charset="utf-8" />
-    <title>HTML Academy: {{projectTitle}}</title>
+    <title>HTML Academy: "CatEnergy"</title>
     <link rel="icon" href="img/favicon.ico" />
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="favicon/180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
-    <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
   </head>
   <body class="page__body">
-    <header class="page__header">
+    <header class="page-header">
       <nav class="site-navigation">
-        <a class="logo logo--mobile-icon">
-          <img
-            src="./img/logos/catenergy.svg"
-            width="101"
-            height="18"
-            alt="Логотип компании Cat Energy"
-          />
-        </a>
-        <button
-          type="button"
-          class="site-navigation__toggler"
-          aria-label="открыть-закрыть меню"
-        ></button>
+        <div class="site-navigation__top-wrapper container">
+          <a class="site-navigation__logo logo logo--icon">
+            <img
+              class="logo__image"
+              src="./img/logos/catenergy.svg"
+              width="101"
+              height="18"
+              alt="Логотип компании Cat Energy"
+            />
+          </a>
+          <button
+            type="button"
+            class="site-navigation__button-burger button-burger"
+            aria-label="открыть-закрыть меню"
+          >
+            <span class="button-burger__icon button-burger__icon--close"></span>
+          </button>
+        </div>
 
-        <ul class="site-navigation__list">
+        <ul class="site-navigation__list site-navigation__list--active">
           <li class="site-navigation__item site-navigation__item--current">
             <a class="site-navigation__link">Главная</a>
           </li>
@@ -44,15 +52,24 @@
         </ul>
       </nav>
     </header>
-    <main class="page__main">
-      <section class="promo">
+    <main class="page-main">
+      <section class="promo container">
         <h1 class="promo__title title">Функциональное питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <a href="form.html" class="button">Подобрать программу</a>
+        <img
+          width="320"
+          height="302"
+          class="promo__image"
+          src="./img/backgrounds/index-can-mobile.png"
+          alt="Банка оранжевого цвета Cat Energy Pro с кормом для кошек со вкусом курицы-  500 грамм, 0% натурального"
+        />
+        <a href="form.html" class="button button--success"
+          >Подобрать программу</a
+        >
       </section>
-      <section class="popular">
+      <section class="popular container">
         <h2 class="visually-hidden">Популярные категории товаров</h2>
-        <ul class="popular__categories">
+        <ul class="popular__categories-list">
           <li class="popular__category-info category-info">
             <h3 class="category-info__title">Похудение</h3>
             <p class="category-info__text">
@@ -61,7 +78,11 @@
               сбросить лишний вес.
             </p>
             <hr />
-            <a href="catalog.html" class="category-info__link">Каталог slim</a>
+            <a
+              href="catalog.html"
+              class="category-info__link button button--arrow"
+              >Каталог slim</a
+            >
           </li>
           <li class="popular__category-info category-info">
             <h3 class="category-info__title">Набор массы</h3>
@@ -70,11 +91,15 @@
               Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
             <hr />
-            <a href="catalog.html" class="category-info__link">Каталог pro</a>
+            <a
+              href="catalog.html"
+              class="category-info__link button button--arrow"
+              >Каталог pro</a
+            >
           </li>
         </ul>
       </section>
-      <section class="instructions">
+      <section class="instructions container">
         <h2 class="instructions__title section-title">Как это работает</h2>
         <ul class="instructions__list">
           <li class="instructions__item">
@@ -104,54 +129,57 @@
         </ul>
       </section>
       <section class="story">
-        <h2 class="story__title section-title">Живой пример</h2>
-        <p class="story__text">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-          этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <dl class="story__achives story-achive">
-          <div class="story-achive__wrapper">
-            <dt class="story-achive__key">снижение веса</dt>
-            <dd class="story-achive__value">5 кг</dd>
+        <div class="container">
+          <h2 class="story__title section-title">Живой пример</h2>
+          <p class="story__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+            этом он не менял своих привычек и по-прежнему спит по 16 часов в
+            день.
+          </p>
+          <dl class="story__achives story-achive">
+            <div class="story-achive__wrapper">
+              <dt class="story-achive__key">снижение веса</dt>
+              <dd class="story-achive__value">5 кг</dd>
+            </div>
+            <div class="story-achive__wrapper">
+              <dt class="story-achive__key">затрачено времени</dt>
+              <dd class="story-achive__value">60 дней</dd>
+            </div>
+            <div class="story-achive__wrapper story-achive__wrapper--result">
+              <dt class="story-achive__key">Затраты на питание:</dt>
+              <dd class="story-achive__value">15 000 РУБ.</dd>
+            </div>
+          </dl>
+          <div class="story__image-mixer image-mixer">
+            <div class="image-mixer__wrapper">
+              <img
+                src="./img/cats/before-mobile.png"
+                width="311"
+                height="232"
+                alt="Толстый кот ждет первую порцию Cat Energy Slim"
+              />
+              <img
+                src="./img/cats/after-mobile.png"
+                width="251"
+                height="240"
+                alt="Стройный кот после 60 дней на корме Cat Energy Slim"
+              />
+            </div>
+            <label for="image-mixer__range">
+              <span class="image-mixer__before-text">было</span>
+              <input
+                type="range"
+                name="image-mixer-range"
+                id="image-mixer__range"
+              />
+              <span class="image-mixer__after-text">стало</span>
+            </label>
           </div>
-          <div class="story-achive__wrapper">
-            <dt class="story-achive__key">затрачено времени</dt>
-            <dd class="story-achive__value">60 дней</dd>
-          </div>
-          <div class="story-achive__wrapper story-achive__wrapper--result">
-            <dt class="story-achive__key">Затраты на питание:</dt>
-            <dd class="story-achive__value">15 000 РУБ.</dd>
-          </div>
-        </dl>
-        <div class="story__image-mixer image-mixer">
-          <div class="image-mixer__wrapper">
-            <img
-              src="./img/cats/before-mobile.png"
-              width="311"
-              height="232"
-              alt="Толстый кот ждет первую порцию Cat Energy Slim"
-            />
-            <img
-              src="./img/cats/after-mobile.png"
-              width="251"
-              height="240"
-              alt="Стройный кот после 60 дней на корме Cat Energy Slim"
-            />
-          </div>
-          <label for="image-mixer__range">
-            <span class="image-mixer__before-text">было</span>
-            <input
-              type="range"
-              name="image-mixer-range"
-              id="image-mixer__range"
-            />
-            <span class="image-mixer__after-text">стало</span>
-          </label>
         </div>
       </section>
     </main>
-    <footer class="page__footer">
+    <footer class="page-footer container">
       <section class="contacts">
         <div class="contacts__info-wrapper">
           <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>

@@ -1,0 +1,48 @@
+.button-burger {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.button-burger__icon {
+  background: $color-black;
+  height: 1.5px;
+  width: 100%;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 1.5px;
+    background-color: $color-black;
+    left: 0;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  // button-burger__icon--close
+
+  &--close {
+    background-color: transparent;
+
+    &::before {
+      top: calc(50% - 0.75px);
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      bottom: calc(50% - 0.75px);
+      transform: rotate(-45deg);
+    }
+  }
+}

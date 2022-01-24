@@ -1,9 +1,19 @@
-//global styles
+// Global styles
+
+@import "./global/normalize.scss";
 @import "./global/fonts.scss";
 @import "./global/global.scss";
 @import "./global/variables.scss";
 
-//blocks
+// Blocks
+
 @import "./blocks/page.scss";
-@import "./blocks/page__header.scss";
 @import "./blocks/container.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/site-navigation.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/button-burger.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/button.scss";
+@import "./blocks/popular.scss";
+@import "./blocks/category-info.scss";

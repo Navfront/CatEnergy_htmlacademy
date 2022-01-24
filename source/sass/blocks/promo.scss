@@ -1,0 +1,26 @@
+.promo {
+  background-color: $color-green-100;
+  background: linear-gradient($color-cat-overley, $color-cat-overley),
+    url("../img/backgrounds/index-background-mobile.jpg"),
+    linear-gradient($color-cat-background, $color-cat-background);
+  background-repeat: no-repeat;
+  background-size: 100% 302px, 320px 302px;
+  background-position: top;
+  color: white;
+  position: relative;
+  padding-top: 1px;
+  font-family: Oswald;
+  line-height: 1;
+  text-align: center;
+}
+
+.promo__title {
+  font-weight: normal;
+  font-size: 36px;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}

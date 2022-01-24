@@ -1,0 +1,22 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo--icon {
+  &::before {
+    content: "";
+    width: 34px;
+    height: 38px;
+    padding: 30px 0;
+    background-image: url(../img/logos/logo-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
