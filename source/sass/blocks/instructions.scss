@@ -1,0 +1,57 @@
+.instructions {
+  padding-top: 10px;
+}
+
+.instructions__list {
+  list-style: none;
+  padding: 0;
+}
+
+.instructions__item {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $color-green-100;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.instructions__text {
+  margin: 0;
+  padding: 5px 20px;
+}
+
+.instructions__item--leaf {
+  &::before {
+    background-image: url("../img/icons/icon_leaf.svg");
+  }
+}
+
+.instructions__item--tub {
+  &::before {
+    background-image: url("../img/icons/icon_tub.svg");
+  }
+}
+
+.instructions__item--eat {
+  &::before {
+    background-image: url("../img/icons/icon_eat.svg");
+  }
+}
+
+.instructions__item--alarm {
+  &::before {
+    background-image: url("../img/icons/icon_alarm.svg");
+  }
+}

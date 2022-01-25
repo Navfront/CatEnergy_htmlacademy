@@ -1,4 +1,9 @@
-.popular__categories-list {
+.popular__list {
+  display: grid;
+  gap: 20px;
+}
+
+.popular__info-card {
   list-style: none;
   padding: 0;
 }

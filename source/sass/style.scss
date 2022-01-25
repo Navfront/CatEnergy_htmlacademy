@@ -4,15 +4,22 @@
 @import "./global/global.scss";
 @import "./global/variables.scss";
 
-// Blocks
+// Sections blocks
 
 @import "./blocks/page.scss";
-@import "./blocks/container.scss";
 @import "./blocks/page-header.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/popular.scss";
+@import "./blocks/instructions.scss";
+@import "./blocks/story.scss";
+
+// Blocks
+
+@import "./blocks/container.scss";
 @import "./blocks/site-navigation.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/button-burger.scss";
-@import "./blocks/promo.scss";
 @import "./blocks/button.scss";
-@import "./blocks/popular.scss";
-@import "./blocks/category-info.scss";
+@import "./blocks/info-card.scss";
+@import "./blocks/section-title.scss";
+@import "./blocks/achives.scss";
