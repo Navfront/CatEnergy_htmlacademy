@@ -136,16 +136,16 @@
           </p>
           <dl class="story__achives achives">
             <div class="achives__item achives__item--bordered">
-              <dd class="achives__item__value">5 кг</dd>
-              <dt class="achives__item__key">снижение веса</dt>
+              <dd class="achives__item-value">5 кг</dd>
+              <dt class="achives__item-key">снижение веса</dt>
             </div>
             <div class="achives__item achives__item--bordered">
-              <dd class="achives__item__value">60 дней</dd>
-              <dt class="achives__item__key">затрачено времени</dt>
+              <dd class="achives__item-value">60 дней</dd>
+              <dt class="achives__item-key">затрачено времени</dt>
             </div>
             <div class="achives__item achives__item--simple">
-              <dt class="achives__item__key">Затраты на питание:</dt>
-              <dd class="achives__item__value">15 000 РУБ.</dd>
+              <dt class="achives__item-key">Затраты на питание:</dt>
+              <dd class="achives__item-value">15 000 РУБ.</dd>
             </div>
           </dl>
           <div class="story__image-mixer image-mixer">
@@ -157,19 +157,23 @@
               </div>
             </div>
 
-            <label for="image-mixer__range">
+            <div class="image-mixer__controls">
               <button type="button" class="image-mixer__before-button">
                 было
               </button>
+              <label for="image-mixer__range" class="visually-hidden"
+                >Ползунок</label
+              >
               <input
                 type="range"
                 name="image-mixer-range"
                 id="image-mixer__range"
               />
+
               <button type="button" class="image-mixer__after-button">
                 стало
               </button>
-            </label>
+            </div>
           </div>
         </div>
       </section>

@@ -1,3 +1,9 @@
+.image-mixer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .image-mixer__photo-cutter {
   display: inline-block;
   overflow: hidden;
@@ -8,7 +14,6 @@
 .image-mixer__photo {
   width: 312px;
   height: 232px;
-  background-color: $color-grey-50;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
