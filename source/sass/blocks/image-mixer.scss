@@ -1,0 +1,23 @@
+.image-mixer__photo-cutter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 3px solid $color-grey-500;
+  height: 232px;
+}
+
+.image-mixer__photo {
+  width: 312px;
+  height: 232px;
+  background-color: $color-grey-50;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.image-mixer__photo--before {
+  background-image: url("../img/cats/before-mobile.png");
+}
+
+.image-mixer__photo--after {
+  background-image: url("../img/cats/after-mobile.png");
+}

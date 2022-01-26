@@ -1,8 +1,50 @@
 .achives {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
 }
 
 .achives__item {
+  color: $color-black;
+  display: block;
+  text-align: center;
+}
+
+.achives__item__key {
+  display: inline-block;
+  color: $color-dark-grey-100;
+  background-color: $color-grey-50;
+}
+
+.achives__item__value {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.achives__item--bordered dd {
   border: 1px solid $color-grey-300;
-  border-radius: 2px;
+  border-radius: 3px;
+  padding: 15px 10px;
+}
+
+.achives__item--bordered dt {
+  transform: translateY(-12px);
+  padding: 0 16px;
+  margin: 0 10px;
+}
+
+.achives__item--simple {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+}
+
+.achives__item--simple dt {
+  margin-right: 5px;
+}
+
+.achives__item--simple dd {
+  font-size: 14px;
+  line-height: 1.43;
 }

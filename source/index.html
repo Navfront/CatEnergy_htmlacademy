@@ -135,13 +135,13 @@
             день.
           </p>
           <dl class="story__achives achives">
-            <div class="achives__item">
-              <dt class="achives__item__key">снижение веса</dt>
+            <div class="achives__item achives__item--bordered">
               <dd class="achives__item__value">5 кг</dd>
+              <dt class="achives__item__key">снижение веса</dt>
             </div>
-            <div class="achives__item">
-              <dt class="achives__item__key">затрачено времени</dt>
+            <div class="achives__item achives__item--bordered">
               <dd class="achives__item__value">60 дней</dd>
+              <dt class="achives__item__key">затрачено времени</dt>
             </div>
             <div class="achives__item achives__item--simple">
               <dt class="achives__item__key">Затраты на питание:</dt>
@@ -149,28 +149,26 @@
             </div>
           </dl>
           <div class="story__image-mixer image-mixer">
-            <div class="image-mixer__wrapper">
-              <img
-                src="./img/cats/before-mobile.png"
-                width="311"
-                height="232"
-                alt="Толстый кот ждет первую порцию Cat Energy Slim"
-              />
-              <img
-                src="./img/cats/after-mobile.png"
-                width="251"
-                height="240"
-                alt="Стройный кот после 60 дней на корме Cat Energy Slim"
-              />
+            <div class="image-mixer__photo image-mixer__photo--after">
+              <div class="image-mixer__photo-cutter" style="width: 126px">
+                <div
+                  class="image-mixer__photo image-mixer__photo--before"
+                ></div>
+              </div>
             </div>
+
             <label for="image-mixer__range">
-              <span class="image-mixer__before-text">было</span>
+              <button type="button" class="image-mixer__before-button">
+                было
+              </button>
               <input
                 type="range"
                 name="image-mixer-range"
                 id="image-mixer__range"
               />
-              <span class="image-mixer__after-text">стало</span>
+              <button type="button" class="image-mixer__after-button">
+                стало
+              </button>
             </label>
           </div>
         </div>
