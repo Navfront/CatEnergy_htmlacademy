@@ -1,0 +1,13 @@
+.page-footer__academy-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.academy-link {
+  color: $color-dark-grey-100;
+}
+
+.academy-link__icon {
+  fill: $color-grey-500;
+}

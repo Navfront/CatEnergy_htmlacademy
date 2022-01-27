@@ -1,0 +1,14 @@
+.socials {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid $color-grey-170;
+  border-bottom: 1px solid $color-grey-170;
+}
+
+.socials__item {
+  width: 30px;
+  text-align: center;
+}

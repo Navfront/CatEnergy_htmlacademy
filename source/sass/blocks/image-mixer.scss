@@ -5,24 +5,29 @@
 }
 
 .image-mixer__photo-cutter {
-  display: inline-block;
-  overflow: hidden;
-  border-right: 3px solid $color-grey-500;
+  position: relative;
+  width: 312px;
   height: 232px;
 }
 
 .image-mixer__photo {
   width: 312px;
   height: 232px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  object-fit: contain;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .image-mixer__photo--before {
-  background-image: url("../img/cats/before-mobile.png");
+  clip: rect(auto, 156px, auto, auto);
 }
 
 .image-mixer__photo--after {
-  background-image: url("../img/cats/after-mobile.png");
+  clip: rect(auto, auto, auto, 156px);
+}
+
+.image-mixer__photo--disabled {
+  display: none;
 }
