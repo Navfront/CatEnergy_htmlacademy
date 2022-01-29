@@ -5,6 +5,10 @@
   border: none;
   background-color: transparent;
   padding: 0;
+
+  @media (min-width: $tablet-min-width) {
+    display: none;
+  }
 }
 
 .button-burger__icon {

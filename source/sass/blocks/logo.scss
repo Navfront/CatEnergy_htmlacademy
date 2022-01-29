@@ -7,6 +7,15 @@
 .logo__image {
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-min-width) {
+    margin-left: 12px;
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-left: 14px;
+  }
 }
 
 .logo--icon {
@@ -18,5 +27,17 @@
     background-image: url("../img/logos/logo-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $tablet-min-width) {
+      background-image: url("../img/logos/logo-tablet.svg");
+      width: 61px;
+      height: 50px;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      width: 70px;
+      height: 59px;
+      background-image: url("../img/logos/logo-desktop.svg");
+    }
   }
 }

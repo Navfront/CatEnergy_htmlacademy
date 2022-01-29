@@ -4,7 +4,7 @@
 @import "./global/global.scss";
 @import "./global/variables.scss";
 
-// Sections blocks
+// Section-blocks index.html
 
 @import "./blocks/page.scss";
 @import "./blocks/page-header.scss";
@@ -15,7 +15,7 @@
 @import "./blocks/footer.scss";
 @import "./blocks/contacts.scss";
 
-// Blocks
+// Index.html blocks
 
 @import "./blocks/container.scss";
 @import "./blocks/site-navigation.scss";
@@ -28,3 +28,13 @@
 @import "./blocks/image-mixer.scss";
 @import "./blocks/socials.scss";
 @import "./blocks/academy-link.scss";
+
+// Section-blocks form.html
+
+@import "./blocks/questionnaire.scss";
+@import "./blocks/form.scss";
+
+// Form.html blocks
+
+@import "./blocks/fieldset.scss";
+@import "./blocks/cat-data.scss";

@@ -14,6 +14,10 @@
 
 .site-navigation__logo {
   flex-grow: 1;
+
+  @media (min-width: $tablet-min-width) {
+    flex-grow: 0;
+  }
 }
 
 .site-navigation__button-burger {
