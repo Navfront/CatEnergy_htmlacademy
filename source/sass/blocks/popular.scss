@@ -2,9 +2,14 @@
   display: grid;
   gap: 20px;
   padding: 0;
+
+  @media (min-width: $desktop-min-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .popular__info-card {
   list-style: none;
-  padding: 0;
 }

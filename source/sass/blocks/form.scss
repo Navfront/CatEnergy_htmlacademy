@@ -1,4 +1,20 @@
 .form {
   display: grid;
   grid-template-columns: 1fr;
+  overflow-x: hidden;
+}
+
+.form__cat-program {
+  border: 1px solid $color-grey-150;
+  border-left: none;
+  border-right: none;
+
+  @media (min-width: $tablet-min-width) {
+    border: 1px solid $color-grey-150;
+    border-radius: 0;
+  }
+}
+
+.form__subtext {
+  text-align: center;
 }

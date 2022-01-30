@@ -11,6 +11,7 @@ $color-grey-500: #666666;
 $color-dark-grey-100: #444444;
 $color-dark-grey-700: #222222;
 $color-black: #000000;
+$color-light-black: #111111;
 $color-black-03: hex(#bababa, 0.3);
 $color-white: #ffffff;
 $color-status-error: #ff8282;
@@ -19,4 +20,5 @@ $color-cat-background: #3a393de7;
 
 $mobile-max-width: 767px;
 $tablet-min-width: 768px;
-$desktop-min-width: 1440px;
+$tablet-max-width: 1279px;
+$desktop-min-width: 1280px;

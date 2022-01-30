@@ -11,6 +11,24 @@
     top: 19px;
     width: 50px;
     height: 50px;
+
+    @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+      left: auto;
+      top: 50%;
+      right: 62px;
+      width: 200px;
+      height: 200px;
+      transform: translateY(-50%);
+      background-size: contain;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      left: 29px;
+      top: 47px;
+      width: 100px;
+      height: 100px;
+      background-size: contain;
+    }
   }
 
   &::before {
@@ -22,24 +40,33 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-}
 
-.info-card__title {
-  margin-left: 80px;
-  font-size: 24px;
-  line-height: 1.54;
-}
-
-.info-card__text {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  hr {
+    @media (min-width: $desktop-min-width) {
+      display: none;
+    }
+  }
 }
 
 .info-card--slim {
   &::after {
     top: 15px;
     background-image: url("../img/icons/cat-slim.svg");
+
+    @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+      left: auto;
+      top: 50%;
+      right: 62px;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      left: 29px;
+      top: 47px;
+      width: 100px;
+      height: 100px;
+    }
   }
 }
 
@@ -50,5 +77,56 @@
     width: 67px;
     height: 28px;
     background-image: url("../img/icons/cat-pro.svg");
+
+    @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+      left: auto;
+      top: 50%;
+      right: 62px;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      left: 29px;
+      top: 47px;
+      width: 100px;
+      height: 100px;
+    }
   }
+}
+
+.info-card__wrapper {
+  @media (min-width: $tablet-min-width) {
+    padding-left: 52px;
+    padding-bottom: 53px;
+    padding-top: 53px;
+    min-height: 372px;
+    max-width: 64%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    height: 100%;
+    padding: 51px;
+    max-width: initial;
+  }
+}
+
+.info-card__title {
+  margin-left: 80px;
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    margin-left: 0;
+  }
+}
+
+.info-card__text {
+  font-family: "Arial", sans-serif;
+}
+
+.info-card__link {
+  margin-top: auto;
 }

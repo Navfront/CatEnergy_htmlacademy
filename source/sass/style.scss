@@ -3,21 +3,14 @@
 @import "./global/fonts.scss";
 @import "./global/global.scss";
 @import "./global/variables.scss";
-
-// Section-blocks index.html
-
+@import "./blocks/container.scss";
 @import "./blocks/page.scss";
 @import "./blocks/page-header.scss";
-@import "./blocks/promo.scss";
-@import "./blocks/popular.scss";
-@import "./blocks/instructions.scss";
-@import "./blocks/story.scss";
 @import "./blocks/footer.scss";
-@import "./blocks/contacts.scss";
+@import "./blocks/text.scss";
 
 // Index.html blocks
 
-@import "./blocks/container.scss";
 @import "./blocks/site-navigation.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/button-burger.scss";
@@ -29,12 +22,18 @@
 @import "./blocks/socials.scss";
 @import "./blocks/academy-link.scss";
 
-// Section-blocks form.html
+// Index.html Section-blocks
 
-@import "./blocks/questionnaire.scss";
-@import "./blocks/form.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/popular.scss";
+@import "./blocks/instructions.scss";
+@import "./blocks/story.scss";
+@import "./blocks/contacts.scss";
 
 // Form.html blocks
 
 @import "./blocks/fieldset.scss";
-@import "./blocks/cat-data.scss";
+
+// Form.html Section-blocks
+
+@import "./blocks/form.scss";

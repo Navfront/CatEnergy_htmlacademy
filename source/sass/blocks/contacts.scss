@@ -5,22 +5,28 @@
 
 .contacts__title {
   flex: 0 0 140px;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.12;
-  text-transform: uppercase;
+
+  @media (min-width: $tablet-min-width) {
+    flex: 0 0 171px;
+  }
 }
 
 .contacts__address {
   flex: 0 0 140px;
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.43;
+
+  @media (min-width: $tablet-min-width) {
+    flex: 0 0 160px;
+    text-align: right;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    text-align: left;
+  }
 }
 
 .contacts__map {
   width: 100%;
   height: 362px;
   object-fit: cover;
+  border: none;
 }

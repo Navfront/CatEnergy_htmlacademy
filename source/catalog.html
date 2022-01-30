@@ -8,10 +8,7 @@
     <link rel="apple-touch-icon" href="favicon/180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="stylesheet" href="css/style.css" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -142,16 +139,18 @@
         </div>
       </section>
     </main>
-    <footer class="page__footer">
-      <section class="contacts">
-        <div class="contacts__info-wrapper">
-          <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-          <address class="contacts__address">
-            <p>ул. Большая Конюшенная, д. 19/8</p>
-            <p>Санкт-Петербург</p>
+    <footer class="page-footer">
+      <section class="page-footer__contacts contacts">
+        <div class="contacts__info-wrapper container">
+          <h2 class="contacts__title font-form font-form--strong">
+            Приглашаем к сотрудничеству дилеров!
+          </h2>
+          <address class="contacts__address font-form font-form--simple">
+            <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </address>
         </div>
         <img
+          class="contacts__map"
           src="./img/maps/location.png"
           width="320"
           height="362"
@@ -159,15 +158,17 @@
         />
       </section>
 
-      <a class="logo">
-        <img
-          src="./img/logos/catenergy.svg"
-          width="101"
-          height="18"
-          alt="Логотип компании Cat Energy"
-        />
-      </a>
-      <ul class="socials">
+      <div class="page-footer__logo">
+        <a class="logo">
+          <img
+            src="./img/logos/catenergy.svg"
+            width="101"
+            height="18"
+            alt="Логотип компании Cat Energy"
+          />
+        </a>
+      </div>
+      <ul class="page-footer__socials socials">
         <li class="socials__item">
           <a href="#" class="socials__link">
             <svg
@@ -220,7 +221,10 @@
           </a>
         </li>
       </ul>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-link">
+      <a
+        href="https://htmlacademy.ru/intensive/adaptive"
+        class="page-footer__academy-link font-form font-form--academy academy-link container"
+      >
         HTML Academy
         <svg
           class="academy-link__icon"
@@ -230,7 +234,6 @@
           viewBox="0 0 60 60"
         >
           <path
-            fill="#2E368F"
             d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"
           />
         </svg>

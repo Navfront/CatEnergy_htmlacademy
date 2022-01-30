@@ -5,12 +5,25 @@
   text-transform: uppercase;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
+  border: none;
 }
 
 .button--success {
   color: $color-white;
   background-color: $color-green-100;
   padding: 12px;
+}
+
+.button--submit {
+  width: 100%;
+
+  @media (min-width: $tablet-min-width) {
+    width: 282px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    width: 568px;
+  }
 }
 
 .button--arrow {

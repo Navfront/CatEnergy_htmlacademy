@@ -9,15 +9,12 @@
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="site-navigation">
-        <div class="site-navigation__top-wrapper container">
+      <nav class="site-navigation container">
+        <div class="site-navigation__top-wrapper">
           <a class="site-navigation__logo logo logo--icon">
             <img
               class="logo__image"
@@ -37,8 +34,12 @@
         </div>
 
         <ul class="site-navigation__list site-navigation__list--active">
-          <li class="site-navigation__item site-navigation__item--current">
-            <a class="site-navigation__link">Главная</a>
+          <li class="site-navigation__item">
+            <a
+              href="index.html"
+              class="site-navigation__link site-navigation__link--current"
+              >Главная</a
+            >
           </li>
           <li class="site-navigation__item">
             <a href="catalog.html" class="site-navigation__link"
@@ -54,45 +55,64 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="promo container">
-        <h1 class="promo__title title">Функциональное питание для котов</h1>
-        <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img
-          width="320"
-          height="302"
-          class="promo__image"
-          src="./img/backgrounds/index-can-mobile.png"
-          alt="Банка оранжевого цвета Cat Energy Pro с кормом для кошек со вкусом курицы-  500 грамм, 0% натурального"
-        />
-        <a href="form.html" class="button button--success"
-          >Подобрать программу</a
-        >
+      <section class="promo">
+        <div class="container">
+          <h1 class="promo__title title font-main font-main--title">
+            Функциональное<br />
+            питание для котов
+          </h1>
+          <p class="promo__slogan font-main font-main--slogan">
+            Занялся собой? Займись котом!
+          </p>
+          <img
+            width="320"
+            height="302"
+            class="promo__image"
+            src="./img/backgrounds/index-can-mobile.png"
+            alt="Банка оранжевого цвета Cat Energy Pro с кормом для кошек со вкусом курицы-  500 грамм, 0% натурального"
+          />
+          <a href="form.html" class="promo__button button button--success"
+            >Подобрать программу</a
+          >
+        </div>
       </section>
-      <section class="popular">
+      <section class="popular container">
         <h2 class="visually-hidden">Популярные категории товаров</h2>
-        <ul class="popular__list container">
+        <ul class="popular__list">
           <li class="popular__info-card info-card info-card--slim">
-            <h3 class="info-card__title">Похудение</h3>
-            <p class="info-card__text">
-              Ваш кот весит больше собаки и почти утратил способность лазить по
-              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
-              сбросить лишний вес.
-            </p>
-            <hr />
-            <a href="catalog.html" class="info-card__link button button--arrow"
-              >Каталог slim</a
-            >
+            <div class="info-card__wrapper">
+              <h3 class="info-card__title font-popular font-popular--title">
+                Похудение
+              </h3>
+              <p class="info-card__text font-popular">
+                Ваш кот весит больше собаки и почти утратил способность лазить
+                по деревьям? Пора на диету! Cat Energy Slim поможет вашему
+                питомцу сбросить лишний вес.
+              </p>
+              <hr />
+              <a
+                href="catalog.html"
+                class="info-card__link button button--arrow font-popular font-popular--button"
+                >Каталог slim</a
+              >
+            </div>
           </li>
           <li class="popular__info-card info-card info-card--pro">
-            <h3 class="info-card__title">Набор массы</h3>
-            <p class="info-card__text">
-              Заработать авторитет среди дворовых котов и даже собак? Серия Cat
-              Energy Pro поможет вашему коту нарастить необходимые мышцы!
-            </p>
-            <hr />
-            <a href="catalog.html" class="info-card__link button button--arrow"
-              >Каталог pro</a
-            >
+            <div class="info-card__wrapper">
+              <h3 class="info-card__title font-popular font-popular--title">
+                Набор массы
+              </h3>
+              <p class="info-card__text font-popular">
+                Заработать авторитет среди дворовых котов и даже собак? Серия
+                Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+              </p>
+              <hr />
+              <a
+                href="catalog.html"
+                class="info-card__link button button--arrow font-popular font-popular--button"
+                >Каталог pro</a
+              >
+            </div>
           </li>
         </ul>
       </section>
@@ -186,8 +206,10 @@
     <footer class="page-footer">
       <section class="page-footer__contacts contacts">
         <div class="contacts__info-wrapper container">
-          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="contacts__address">
+          <h2 class="contacts__title font-form font-form--strong">
+            Приглашаем к сотрудничеству дилеров!
+          </h2>
+          <address class="contacts__address font-form font-form--simple">
             <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </address>
         </div>
@@ -265,7 +287,7 @@
       </ul>
       <a
         href="https://htmlacademy.ru/intensive/adaptive"
-        class="page-footer__academy-link academy-link container"
+        class="page-footer__academy-link font-form font-form--academy academy-link container"
       >
         HTML Academy
         <svg
@@ -281,5 +303,6 @@
         </svg>
       </a>
     </footer>
+    <script src="./js/site-navigation.js"></script>
   </body>
 </html>

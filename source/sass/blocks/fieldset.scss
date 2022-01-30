@@ -1,42 +1,24 @@
 .fieldset {
   background-color: rgba(172, 255, 47, 0.247);
+  padding: 0;
+  margin: 0;
   border: none;
 }
 
-.fieldset__label {
-  display: flex;
-  position: relative;
-  font-size: 16px;
-  line-height: 1.12;
-  align-items: center;
-  margin-bottom: 13px;
-}
-
-.fieldset__label svg {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.fieldset__input-chars {
-  flex: 1 0 auto;
-  min-height: 45px;
-  margin-left: 13px;
-  padding-left: 10px;
-  padding-right: 50px;
-}
-
 .fieldset__heading {
-  font-size: 24px;
-  line-height: 1.08;
   display: flex;
   width: 100%;
   position: relative;
+  padding: 0;
+  white-space: normal;
 }
 
 .fieldset__heading span {
   flex: 0 0 184px;
+
+  @media (min-width: $tablet-min-width) {
+    flex: 0 0 auto;
+  }
 }
 
 .fieldset__heading::after {
@@ -66,4 +48,42 @@
   @media (min-width: $desktop-min-width) {
     width: 60px;
   }
+}
+
+.fieldset__label {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.fieldset__label svg {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fieldset__input-chars {
+  flex: 1 0 auto;
+  min-height: 45px;
+  margin-left: 13px;
+  padding-left: 10px;
+  padding-right: 50px;
+}
+
+.fieldset__textarea {
+  width: 100%;
+  height: 150px;
+  border: 1px solid $color-grey-150;
+  resize: none;
+}
+
+.fieldset__textarea::placeholder {
+  color: $color-black;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.12;
+  text-transform: uppercase;
+  padding: 10px 19px;
 }

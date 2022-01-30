@@ -1,0 +1,184 @@
+.font-main {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.font-main--title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.font-main--slogan {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 25px 0 29px;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 20px;
+    margin: 41px 0 49px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin: 40px 0 59px;
+  }
+}
+
+.font-popular {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.29;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.font-popular--title {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1.54;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 36px;
+  }
+}
+
+.font-popular--button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+.font-form {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: $color-dark-grey-100;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+.font-form--heading {
+  font-size: 24px;
+  line-height: 1.08;
+  color: $color-black;
+  text-transform: initial;
+  margin: 26px 0 35px;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 36px;
+    line-height: 1;
+    margin: 65px 0 76px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin: 69px 0 76px;
+  }
+}
+
+.font-form--title {
+  font-size: 36px;
+  line-height: 1;
+  margin: 27px 0 37px;
+  color: $color-black;
+  text-transform: initial;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 60px;
+    margin: 64px 0 54px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin: 73px 0 56px;
+  }
+}
+
+.font-form--slogan {
+  font-size: 14px;
+  line-height: 1.29;
+  color: $color-black;
+  max-width: 325px;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+.font-form--subtext {
+  font-family: "Arial", sans-serif;
+  color: $color-black;
+  text-transform: initial;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 16px;
+  }
+}
+
+.font-form--strong {
+  font-size: 16px;
+  line-height: 1.12;
+  color: $color-light-black;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    font-size: 20px;
+    line-height: 1.05;
+  }
+}
+
+.font-form--simple {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  text-transform: initial;
+  color: $color-dark-grey-100;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.font-form--academy {
+  font-family: "Arial", sans-serif;
+  text-transform: initial;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.font-form--dark {
+  color: $color-dark-grey-700;
+}
