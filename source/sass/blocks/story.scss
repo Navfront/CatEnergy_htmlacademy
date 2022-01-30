@@ -1,9 +1,15 @@
 .story {
   background-color: $color-grey-50;
+
+  @media (min-width: $desktop-min-width) {
+    background-color: $color-white;
+    background-image: linear-gradient(transparent 35%, $color-grey-50 35%, $color-grey-50);
+  }
 }
 
-.story__text {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 1.29;
+.story__wrapper {
+  @media (min-width: $desktop-min-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

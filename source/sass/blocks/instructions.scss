@@ -5,12 +5,21 @@
 .instructions__list {
   list-style: none;
   padding: 0;
+  counter-reset: num-counter;
+
+  @media (min-width: $tablet-min-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(280px, auto);
+  }
+
+  @media (min-width: $desktop-min-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .instructions__item {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 1.29;
+  position: relative;
   margin-bottom: 20px;
   display: flex;
   align-items: flex-start;
@@ -25,11 +34,42 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-min-width) {
+    flex-direction: column;
+
+    &::after {
+      counter-increment: num-counter;
+      content: counter(num-counter);
+      position: absolute;
+      left: 119px;
+      top: -40px;
+      display: block;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 280px;
+      line-height: 280px;
+      color: $color-grey-100;
+      z-index: -1;
+    }
+
+    &::before {
+      margin-bottom: 31px;
+      width: 80px;
+      height: 80px;
+    }
+  }
 }
 
 .instructions__text {
   margin: 0;
   padding: 5px 20px;
+
+  @media (min-width: $tablet-min-width) {
+    max-width: 241px;
+    padding-left: 0;
+  }
 }
 
 .instructions__item--leaf {

@@ -1,11 +1,31 @@
-.page-footer {
+.footer {
   padding-top: 1px;
 }
 
-.page-footer__logo {
-  margin: 20px;
+.footer__socials-wrapper {
+  @media (min-width: $tablet-min-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
-.page-footer__socials {
-  margin: 0 20px;
+.footer .logo {
+  @media (min-width: $tablet-min-width) {
+    justify-content: flex-start;
+  }
+}
+
+.footer__academy-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-dark-grey-100;
+
+  @media (min-width: $tablet-min-width) {
+    justify-content: flex-end;
+  }
+}
+
+.footer__academy-icon {
+  fill: $color-grey-500;
 }

@@ -54,6 +54,10 @@
     flex-wrap: wrap;
     justify-content: flex-end;
   }
+
+  @media (min-width: $desktop-min-width) {
+    max-width: 550px;
+  }
 }
 
 .site-navigation__item {
@@ -83,10 +87,6 @@
     font-size: 18px;
     line-height: 1.33;
   }
-
-  @media (min-width: $desktop-min-width) {
-    color: $color-white;
-  }
 }
 
 .site-navigation__link--current {
@@ -101,10 +101,18 @@
       bottom: -10px;
       height: 2px;
       background-color: $color-green-100;
-
-      @media (min-width: $desktop-min-width) {
-        background-color: $color-white;
-      }
     }
+  }
+}
+
+.site-navigation--index .site-navigation__link {
+  @media (min-width: $desktop-min-width) {
+    color: $color-white;
+  }
+}
+
+.site-navigation--index .site-navigation__link--current {
+  &::before {
+    background-color: $color-white;
   }
 }

@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    grid-template-columns: 1fr 1fr minmax(300px, auto);
+  }
 }
 
 .achives__item {
@@ -14,12 +18,24 @@
   display: inline-block;
   color: $color-dark-grey-100;
   background-color: $color-grey-50;
+  font-size: 12px;
+  line-height: 12px;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .achives__item-value {
   font-size: 24px;
   line-height: 24px;
   margin: 0;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .achives__item--bordered dd {
@@ -38,13 +54,42 @@
   grid-column: 1/-1;
   display: flex;
   justify-content: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-black;
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    grid-column: initial;
+    justify-self: end;
+    display: grid;
+    align-content: center;
+    justify-items: flex-end;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .achives__item--simple dt {
   margin-right: 5px;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+
+  @media (min-width: $tablet-min-width) {
+    margin-right: 0;
+  }
 }
 
 .achives__item--simple dd {
-  font-size: 14px;
-  line-height: 1.43;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
 }

@@ -1,6 +1,23 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__info-wrapper {
   display: flex;
   justify-content: space-between;
+  background-color: $color-white;
+
+  @media (min-width: $desktop-min-width) {
+    display: grid;
+    grid-template-columns: 163px 155px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-107%, -50%);
+    z-index: 2;
+    width: 570px;
+    padding: 50px;
+  }
 }
 
 .contacts__title {
@@ -19,7 +36,7 @@
     text-align: right;
   }
 
-  @media (min-width: $tablet-min-width) {
+  @media (min-width: $desktop-min-width) {
     text-align: left;
   }
 }

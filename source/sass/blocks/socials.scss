@@ -1,11 +1,15 @@
 .socials {
-  padding: 0;
+  padding: 20px 0;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
   border-top: 1px solid $color-grey-170;
   border-bottom: 1px solid $color-grey-170;
+
+  @media (min-width: $tablet-min-width) {
+    border: none;
+  }
 }
 
 .socials__item {
