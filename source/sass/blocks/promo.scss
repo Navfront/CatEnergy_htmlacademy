@@ -9,8 +9,13 @@
   @media (min-width: $tablet-min-width) {
     color: $color-black;
     text-align: left;
-    min-height: 885px;
     padding-left: 87px;
+
+    &::after {
+      content: "";
+      display: block;
+      padding-bottom: 540px;
+    }
   }
 
   @media (min-width: $desktop-min-width) {
