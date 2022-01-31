@@ -1,42 +1,30 @@
 .promo {
-  background-image: linear-gradient($color-cat-overley, $color-cat-overley),
-    url("../img/backgrounds/index-background-mobile.jpg"),
-    linear-gradient($color-cat-background, $color-cat-background);
-  background-repeat: no-repeat;
-  background-size: 100% 302px, 320px 302px;
-  background-position: top;
   color: $color-white;
   position: relative;
   padding-top: 1px;
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 1;
   text-align: center;
-  z-index: -1;
 
   @media (min-width: $tablet-min-width) {
-    background-image: none;
     color: $color-black;
     text-align: left;
+    min-height: 885px;
     padding-left: 87px;
-    padding-bottom: 250px;
   }
 
   @media (min-width: $desktop-min-width) {
-    padding-left: 80px;
-    background-image: linear-gradient($color-cat-overley, $color-cat-overley),
-      url("../img/backgrounds/index-background-desktop.jpg"),
-      linear-gradient($color-cat-background, $color-cat-background);
-    background-repeat: no-repeat;
-    background-size: 50% 694px, 50% 694px;
-    background-position: right top;
+    padding-left: 0;
+    min-height: 696px;
   }
 }
 
 .promo__title {
-  max-width: 415px;
+  max-width: 420px;
   margin: 25px auto 41px auto;
 
   @media (min-width: $tablet-min-width) {
+    max-width: 600px;
     margin: 64px auto 41px 0;
   }
 
@@ -45,21 +33,55 @@
   }
 }
 
-.promo__image {
-  display: block;
-  margin: 0 auto;
+.promo__image-background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100% 302px, 320px 300px, 100% 302px;
+  background-image: linear-gradient($color-cat-overley, $color-cat-overley),
+    url("../../img/backgrounds/index-background-mobile.jpg"),
+    linear-gradient($color-cat-background, $color-cat-background);
+  background-position: center top;
 
   @media (min-width: $tablet-min-width) {
-    position: absolute;
-    left: 50%;
-    top: 47%;
-    z-index: -1;
-    transform: translateX(-50%);
+    background-image: none;
   }
 
   @media (min-width: $desktop-min-width) {
-    left: 60%;
-    top: 150px;
+    width: 50%;
+    height: 694px;
+    background-position: right top;
+    background-size: 100% 720px, 694px 720px, 100% 720px;
+    background-image: linear-gradient($color-cat-overley, $color-cat-overley),
+      url("../../img/backgrounds/index-background-desktop.jpg"),
+      linear-gradient($color-cat-desktop-bg, $color-cat-desktop-bg);
+  }
+}
+
+.promo__can-image {
+  @media (min-width: $tablet-min-width) {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 709px;
+    height: 609px;
+    object-fit: contain;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    bottom: initial;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-29.5%);
+    top: 141px;
+    width: 552px;
+    height: 499px;
   }
 }
 

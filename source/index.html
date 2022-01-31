@@ -57,6 +57,7 @@
     <main class="page-main">
       <section class="promo">
         <div class="container">
+          <div class="promo__image-background"></div>
           <h1 class="promo__title title font-main font-main--title">
             Функциональное<br />
             питание для котов
@@ -64,13 +65,36 @@
           <p class="promo__slogan font-main font-main--slogan">
             Занялся собой? Займись котом!
           </p>
-          <img
-            width="320"
-            height="302"
-            class="promo__image"
-            src="./img/backgrounds/index-can-mobile.png"
-            alt="Банка оранжевого цвета Cat Energy Pro с кормом для кошек со вкусом курицы-  500 грамм, 0% натурального"
-          />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                /img/backgrounds/index-can.png,
+                /img/backgrounds/index-can@2x.png 2x,
+                /img/backgrounds/index-can@3x.png 3x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                /img/backgrounds/index-can-tablet.png,
+                /img/backgrounds/index-can-tablet@2x.png 2x,
+                /img/backgrounds/index-can-tablet@3x.png 3x
+              "
+            />
+            <img
+              width="280"
+              height="270"
+              class="promo__can-image"
+              src="./img/backgrounds/index-can-mobile.png"
+              srcset="
+                ./img/backgrounds/index-can-mobile@2x.png 2x,
+                ./img/backgrounds/index-can-mobile@3x.png 3x
+              "
+              alt="Банка оранжевого цвета Cat Energy Pro с кормом для кошек со вкусом курицы-  500 грамм, 0% натурального"
+            />
+          </picture>
+
           <a href="form.html" class="promo__button button button--success"
             >Подобрать программу</a
           >

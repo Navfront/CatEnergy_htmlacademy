@@ -84,6 +84,7 @@
   position: relative;
 
   @media (min-width: $tablet-min-width) {
+    font-weight: normal;
     font-size: 18px;
     line-height: 1.33;
   }
