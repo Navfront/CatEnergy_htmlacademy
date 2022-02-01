@@ -1,7 +1,10 @@
 .form {
   display: grid;
   grid-template-columns: 1fr;
-  overflow-x: hidden;
+
+  @media (min-width: $desktop-min-width) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .form__cat-program {
@@ -13,6 +16,18 @@
     border: 1px solid $color-grey-150;
     border-radius: 0;
   }
+}
+
+.form__owner-contacts {
+  grid-column: 1/-1;
+}
+
+.form__comments {
+  grid-column: 1/-1;
+}
+
+.form__additionally {
+  grid-column: 1/-1;
 }
 
 .form__subtext {
