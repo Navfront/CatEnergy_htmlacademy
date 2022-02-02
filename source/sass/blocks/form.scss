@@ -3,6 +3,7 @@
   grid-template-columns: 1fr;
 
   @media (min-width: $desktop-min-width) {
+    gap: 80px;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -11,10 +12,16 @@
   border: 1px solid $color-grey-150;
   border-left: none;
   border-right: none;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-min-width) {
     border: 1px solid $color-grey-150;
     border-radius: 0;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-bottom: 69px;
   }
 }
 
@@ -28,8 +35,4 @@
 
 .form__additionally {
   grid-column: 1/-1;
-}
-
-.form__subtext {
-  text-align: center;
 }

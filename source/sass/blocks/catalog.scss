@@ -1,0 +1,26 @@
+.catalog__title {
+  color: $color-black;
+  text-align: center;
+
+  @media (min-width: $tablet-min-width) {
+    text-align: left;
+  }
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(190px, auto);
+  list-style: none;
+  padding: 0;
+  gap: 11px;
+  grid-column: 1/-1;
+
+  @media (min-width: $tablet-min-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

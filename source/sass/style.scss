@@ -1,4 +1,4 @@
-// Global styles
+// Global styles:
 
 @import "./global/fonts.scss";
 @import "./global/global.scss";
@@ -9,7 +9,8 @@
 @import "./blocks/footer.scss";
 @import "./blocks/text.scss";
 
-// Index.html blocks
+// -------------------------------------------------------------------
+// Index.html blocks:
 
 @import "./blocks/site-navigation.scss";
 @import "./blocks/logo.scss";
@@ -20,7 +21,7 @@
 @import "./blocks/image-mixer.scss";
 @import "./blocks/socials.scss";
 
-// Index.html Section-blocks
+// Index.html Section-blocks:
 
 @import "./blocks/promo.scss";
 @import "./blocks/popular.scss";
@@ -28,10 +29,19 @@
 @import "./blocks/story.scss";
 @import "./blocks/contacts.scss";
 
-// Form.html blocks
+// -------------------------------------------------------------------
+// Form.html blocks:
 
 @import "./blocks/fieldset.scss";
 
-// Form.html Section-blocks
+// Form.html Section-blocks:
 
 @import "./blocks/form.scss";
+
+// Catalog.html Section-blocks:
+
+@import "./blocks/catalog.scss";
+
+// Catalog.html blocks:
+
+@import "./blocks/card.scss"; // -------------------------------------------------------------------

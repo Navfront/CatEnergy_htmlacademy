@@ -1,0 +1,91 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid $color-grey-200;
+  padding: 6px 0 20px;
+
+  @media (min-width: $tablet-min-width) {
+    border: none;
+  }
+}
+
+.card:first-child {
+  border-top: 1px solid $color-grey-200;
+
+  @media (min-width: $tablet-min-width) {
+    border: none;
+  }
+}
+
+.card__link-image {
+  grid-column: 1;
+  position: relative;
+  padding-bottom: 58%;
+  display: block;
+}
+
+.card__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  min-height: 112px;
+}
+
+.card__description {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__button {
+  grid-column: 1/-1;
+  width: 100%;
+}
+
+.card__title {
+  color: $color-black;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  justify-content: start;
+}
+
+.card__characteristics {
+  display: flex;
+  flex-direction: column;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.card__characteristics dd {
+  margin-left: 0;
+}
+
+.card__characteristics-line {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 5px;
+  max-width: 138px;
+
+  @media (min-width: $tablet-min-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 1px;
+      background-color: $color-grey-300;
+    }
+  }
+}
