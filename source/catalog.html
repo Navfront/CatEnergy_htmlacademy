@@ -63,7 +63,7 @@
         </h2>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <article class="catalog__card card">
+            <article class="catalog__card card side-paddings">
               <a class="card__link-image" href="blank.html">
                 <picture>
                   <source
@@ -109,11 +109,16 @@
               >
             </article>
           </li>
-          <li>
+          <li class="catalog__item">
             <article class="catalog__card card card--others">
-              <h3 class="card__title">Показать еще 100500 товаров</h3>
-              <p class="card__text">На самом деле вкусов гораздо больше!</p>
-              <a href="blank.html" class="button button--neutral"
+              <div class="card__wrapper">
+                <h3 class="card__title card__title--center">
+                  Показать еще<br />
+                  100500 товаров
+                </h3>
+                <p class="card__text">На самом деле вкусов гораздо больше!</p>
+              </div>
+              <a href="blank.html" class="button card__button button--neutral"
                 >показать все</a
               >
             </article>
@@ -121,46 +126,74 @@
         </ul>
       </section>
       <section class="additional-goods container">
-        <h2 class="additional-goods heading">Дополнительные товары</h2>
-        <ul class="additional-goods__list">
-          <li class="additional-goods__item">
-            <article class="additionals-card">
-              <h3 class="additionals-card__title">Сахарозаменитель</h3>
-              <p class="additionals-card__packaging">
-                <span class="additionals-card__package"
-                  >1 упаковка (100 г)</span
+        <h2 class="additional-goods__heading heading-decored">
+          <span>Дополнительные товары</span>
+        </h2>
+        <div class="additional-goods__wrapper side-paddings">
+          <ul class="additional-goods__list">
+            <li class="additional-goods__item">
+              <article class="additionals-card">
+                <h3 class="additionals-card__title">Сахарозаменитель</h3>
+                <p class="additionals-card__packaging">
+                  <span class="additionals-card__package"
+                    >1 упаковка (100 г)</span
+                  >
+                  <span class="additionals-card__price">200 Р.</span>
+                </p>
+                <a
+                  href="blank.html"
+                  class="additionals-card__button button button--success card__button"
+                  >Заказать</a
                 >
-                <span class="additionals-card__price">200 Р.</span>
-              </p>
-              <a href="blank.html" class="button">Заказать</a>
-            </article>
-            <article class="additionals-card">
-              <h3 class="additionals-card__title">питьевая вода</h3>
-              <p class="additionals-card__packaging">
-                <span class="additionals-card__package">5 литров</span>
-                <span class="additionals-card__price">50 Р.</span>
-              </p>
-              <a href="blank.html" class="button">Заказать</a>
-            </article>
-            <article class="additionals-card">
-              <h3 class="additionals-card__title">молоко</h3>
-              <p class="additionals-card__packaging">
-                <span class="additionals-card__package">1 литр</span>
-                <span class="additionals-card__price">100 Р.</span>
-              </p>
-              <a href="blank.html" class="button">Заказать</a>
-            </article>
-            <article class="additionals-card">
-              <h3 class="additionals-card__title">витамины</h3>
-              <p class="additionals-card__packaging">
-                <span class="additionals-card__package">1 упаковка (30 г)</span>
-                <span class="additionals-card__price">300 Р.</span>
-              </p>
-              <a href="blank.html" class="button">Заказать</a>
-            </article>
-          </li>
-        </ul>
-        <div class="advertisement">
+              </article>
+            </li>
+            <li class="additional-goods__item">
+              <article class="additionals-card">
+                <h3 class="additionals-card__title">питьевая вода</h3>
+                <p class="additionals-card__packaging">
+                  <span class="additionals-card__package">5 литров</span>
+                  <span class="additionals-card__price">50 Р.</span>
+                </p>
+                <a
+                  href="blank.html"
+                  class="additionals-card__button button button--success card__button"
+                  >Заказать</a
+                >
+              </article>
+            </li>
+            <li class="additional-goods__item">
+              <article class="additionals-card">
+                <h3 class="additionals-card__title">молоко</h3>
+                <p class="additionals-card__packaging">
+                  <span class="additionals-card__package">1 литр</span>
+                  <span class="additionals-card__price">100 Р.</span>
+                </p>
+                <a
+                  href="blank.html"
+                  class="additionals-card__button button button--success card__button"
+                  >Заказать</a
+                >
+              </article>
+            </li>
+            <li class="additional-goods__item">
+              <article class="additionals-card">
+                <h3 class="additionals-card__title">витамины</h3>
+                <p class="additionals-card__packaging">
+                  <span class="additionals-card__package"
+                    >1 упаковка (30 г)</span
+                  >
+                  <span class="additionals-card__price">300 Р.</span>
+                </p>
+                <a
+                  href="blank.html"
+                  class="additionals-card__button button button--success card__button"
+                  >Заказать</a
+                >
+              </article>
+            </li>
+          </ul>
+        </div>
+        <div class="advertisement side-paddings">
           <p class="advertisement__text">
             Закажите все и получите чехол для кота в подарок!
           </p>
@@ -169,7 +202,7 @@
     </main>
     <footer class="page-footer footer">
       <section class="page-footer__contacts contacts">
-        <div class="contacts__info-wrapper container">
+        <div class="contacts__info-wrapper container side-paddings">
           <h2 class="contacts__title font-form font-form--strong">
             Приглашаем к сотрудничеству дилеров!
           </h2>
@@ -186,7 +219,7 @@
         />
       </section>
 
-      <div class="footer__socials-wrapper container">
+      <div class="footer__socials-wrapper container side-paddings">
         <a class="footer__logo logo">
           <img
             src="./img/logos/catenergy.svg"

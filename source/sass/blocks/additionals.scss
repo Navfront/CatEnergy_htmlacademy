@@ -1,0 +1,31 @@
+.additional-goods {
+  @media (min-width: $desktop-min-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 80px;
+  }
+}
+
+.additional-goods__heading {
+  grid-column: 1/-1;
+}
+
+.additional-goods__wrapper {
+  grid-column: 1/-2;
+}
+
+.additional-goods__list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.additional-goods__item {
+  border-top: 1px solid $color-grey-200;
+  padding-bottom: 20px;
+}
+
+.additional-goods__item + .additional-goods__item {
+  border: 1px solid $color-grey-200;
+  border-left: none;
+  border-right: none;
+}

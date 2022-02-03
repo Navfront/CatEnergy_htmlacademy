@@ -13,50 +13,51 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="site-navigation site-navigation--index container">
-        <div class="site-navigation__top-wrapper">
-          <a class="site-navigation__logo logo logo--icon">
-            <img
-              class="logo__image"
-              src="./img/logos/catenergy.svg"
-              width="101"
-              height="18"
-              alt="Логотип компании Cat Energy"
-            />
-          </a>
-          <button
-            type="button"
-            class="site-navigation__button-burger button-burger"
-            aria-label="открыть-закрыть меню"
-          >
-            <span class="button-burger__icon button-burger__icon--close"></span>
-          </button>
-        </div>
+      <header class="page-header">
+        <nav class="site-navigation site-navigation--index container">
+          <div class="site-navigation__top-wrapper">
+            <a class="site-navigation__logo logo logo--icon">
+              <img
+                class="logo__image"
+                src="./img/logos/catenergy.svg"
+                width="101"
+                height="18"
+                alt="Логотип компании Cat Energy"
+              />
+            </a>
+            <button
+              type="button"
+              class="site-navigation__button-burger button-burger"
+              aria-label="открыть-закрыть меню"
+            >
+              <span class="button-burger__icon button-burger__icon--close"></span>
+            </button>
+          </div>
 
-        <ul class="site-navigation__list site-navigation__list--active">
-          <li class="site-navigation__item">
-            <a
-              href="index.html"
-              class="site-navigation__link site-navigation__link--current"
-              >Главная</a
-            >
-          </li>
-          <li class="site-navigation__item">
-            <a href="catalog.html" class="site-navigation__link"
-              >Каталог продукции</a
-            >
-          </li>
-          <li class="site-navigation__item">
-            <a href="form.html" class="site-navigation__link"
-              >Подбор программы</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+          <ul class="site-navigation__list site-navigation__list--active">
+            <li class="site-navigation__item">
+              <a
+                href="index.html"
+                class="site-navigation__link site-navigation__link--current"
+                >Главная</a
+              >
+            </li>
+            <li class="site-navigation__item">
+              <a href="catalog.html" class="site-navigation__link"
+                >Каталог продукции</a
+              >
+            </li>
+            <li class="site-navigation__item">
+              <a href="form.html" class="site-navigation__link"
+                >Подбор программы</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
     <main class="page-main">
       <section class="promo">
-        <div class="container">
+        <div class="container side-paddings">
           <h1 class="promo__title title font-main font-main--title">
             Функциональное<br />
             питание для котов
@@ -94,12 +95,14 @@
             />
           </picture>
 
-          <a href="form.html" class="promo__button button button--success"
+          <a
+            href="form.html"
+            class="promo__button button button--success side-paddings"
             >Подобрать программу</a
           >
         </div>
       </section>
-      <section class="popular container">
+      <section class="popular container side-paddings">
         <h2 class="visually-hidden">Популярные категории товаров</h2>
         <ul class="popular__list">
           <li class="popular__info-card info-card info-card--slim">
@@ -139,7 +142,7 @@
           </li>
         </ul>
       </section>
-      <section class="instructions container">
+      <section class="instructions container side-paddings">
         <h2 class="instructions__title font-main font-main--headline">
           Как это работает
         </h2>
@@ -171,7 +174,7 @@
         </ul>
       </section>
       <section class="story">
-        <div class="container story__wrapper">
+        <div class="container story__wrapper side-paddings">
           <div class="story__info-block">
             <h2 class="story__title font-main font-main--headline">
               Живой пример
@@ -234,7 +237,7 @@
     </main>
     <footer class="page-footer footer">
       <section class="page-footer__contacts contacts">
-        <div class="contacts__info-wrapper container">
+        <div class="contacts__info-wrapper container side-paddings">
           <h2 class="contacts__title font-form font-form--strong">
             Приглашаем к сотрудничеству дилеров!
           </h2>
@@ -251,7 +254,7 @@
         />
       </section>
 
-      <div class="footer__socials-wrapper container">
+      <div class="footer__socials-wrapper container side-paddings">
         <a class="footer__logo logo">
           <img
             src="./img/logos/catenergy.svg"

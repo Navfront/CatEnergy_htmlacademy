@@ -1,0 +1,35 @@
+.heading-decored {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.heading-decored span {
+  background-color: $color-white;
+  flex: 0 1 auto;
+  width: min-content;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-min-width) {
+    width: auto;
+    padding: 0 30px;
+  }
+}
+
+.heading-decored::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  min-width: 320px;
+  width: 100vw;
+  height: 2px;
+  background-color: $color-green-100;
+  z-index: -1;
+
+  @media (min-width: $tablet-min-width) {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

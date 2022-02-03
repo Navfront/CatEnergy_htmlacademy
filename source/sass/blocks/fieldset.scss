@@ -1,38 +1,3 @@
-.fieldset__heading {
-  display: flex;
-  width: 100%;
-  position: relative;
-  padding: 0;
-  white-space: normal;
-}
-
-.fieldset__heading span {
-  background-color: $color-white;
-  flex: 0 1 auto;
-  width: min-content;
-
-  @media (min-width: $tablet-min-width) {
-    width: auto;
-  }
-}
-
-.fieldset__heading::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
-  width: 100vw;
-  height: 2px;
-  background-color: $color-green-100;
-  z-index: -1;
-
-  @media (min-width: $tablet-min-width) {
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
 .fieldset__label {
   display: flex;
   position: relative;
@@ -48,7 +13,7 @@
 }
 
 .fieldset__input-chars {
-  flex: 1 1 auto;
+  flex: 1 0 auto;
   min-height: 45px;
   margin-left: 13px;
   padding-left: 10px;
@@ -75,13 +40,13 @@
   @media (min-width: $tablet-min-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 0 60px;
   }
 
   @media (min-width: $desktop-min-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    gap: 0 40px;
   }
 }
 

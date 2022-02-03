@@ -4,6 +4,7 @@
 @import "./global/global.scss";
 @import "./global/variables.scss";
 @import "./blocks/container.scss";
+@import "./blocks/side-paddings.scss";
 @import "./blocks/page.scss";
 @import "./blocks/page-header.scss";
 @import "./blocks/footer.scss";
@@ -44,4 +45,7 @@
 
 // Catalog.html blocks:
 
-@import "./blocks/card.scss"; // -------------------------------------------------------------------
+@import "./blocks/card.scss";
+@import "./blocks/additionals.scss";
+@import "./blocks/additionals-card.scss";
+@import "./blocks/heading-decored.scss"; //-------------------------------------------------------------------

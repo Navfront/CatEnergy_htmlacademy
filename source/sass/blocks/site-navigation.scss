@@ -10,18 +10,15 @@
     display: flex;
     justify-content: space-between;
   }
-
-  @media (min-width: $desktop-min-width) {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-  }
 }
 
 .site-navigation__top-wrapper {
   display: flex;
   align-items: center;
+
+  @media (max-width: $mobile-max-width) {
+    padding: 0 30px;
+  }
 }
 
 .site-navigation__logo {
@@ -115,5 +112,14 @@
 .site-navigation--index .site-navigation__link--current {
   &::before {
     background-color: $color-white;
+  }
+}
+
+.site-navigation--index {
+  @media (min-width: $desktop-min-width) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
   }
 }
