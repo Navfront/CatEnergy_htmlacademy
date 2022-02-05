@@ -7,8 +7,16 @@
   align-items: center;
 
   @media (min-width: $tablet-min-width) {
+    min-height: 110px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    min-height: 168px;
+    padding: 0;
   }
 }
 
@@ -17,7 +25,11 @@
   align-items: center;
 
   @media (max-width: $mobile-max-width) {
-    padding: 0 30px;
+    padding: 0 20px 11px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    padding: 0;
   }
 }
 
@@ -26,6 +38,13 @@
 
   @media (min-width: $tablet-min-width) {
     flex-grow: 0;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-left: -8px;
+    margin-bottom: 0;
   }
 }
 
@@ -49,29 +68,33 @@
   @media (min-width: $tablet-min-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: space-between;
+    max-width: 530px;
+    align-items: center;
+    flex: 0 0 460px;
   }
 
   @media (min-width: $desktop-min-width) {
-    max-width: 550px;
+    flex: 0 0 500px;
+    max-width: 700px;
+    margin-right: -10px;
   }
 }
 
 .site-navigation__item {
   text-align: center;
-  padding: 20px;
-  border-top: 1px solid $color-grey-130;
+  padding: 21.5px 20px;
 
-  &:last-child {
-    border-bottom: 1px solid $color-grey-130;
+  @media (max-width: $mobile-max-width) {
+    border-top: 1px solid $color-grey-130;
+
+    &:last-child {
+      border-bottom: 1px solid $color-grey-130;
+    }
   }
 
   @media (min-width: $tablet-min-width) {
-    border: none;
-
-    &:last-child {
-      border: none;
-    }
+    padding: 10px;
   }
 }
 
@@ -85,20 +108,35 @@
     font-size: 18px;
     line-height: 1.33;
   }
+
+  @media (min-width: $desktop-min-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .site-navigation__link--current {
   @media (min-width: $tablet-min-width) {
-    border: none;
-
     &::before {
       content: "";
       position: absolute;
       left: 0;
       right: 0;
-      bottom: -10px;
+      bottom: -8px;
       height: 2px;
       background-color: $color-green-100;
+    }
+  }
+
+  @media (min-width: $tablet-min-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -8px;
+      height: 2px;
+      background-color: $color-white;
     }
   }
 }
@@ -106,12 +144,6 @@
 .site-navigation--index .site-navigation__link {
   @media (min-width: $desktop-min-width) {
     color: $color-white;
-  }
-}
-
-.site-navigation--index .site-navigation__link--current {
-  &::before {
-    background-color: $color-white;
   }
 }
 

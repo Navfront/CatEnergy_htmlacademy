@@ -1,4 +1,5 @@
 .promo {
+  padding: 0 20px 7px;
   color: $color-white;
   position: relative;
   padding-top: 1px;
@@ -6,11 +7,23 @@
   line-height: 1;
   text-align: center;
   background-repeat: no-repeat;
-  background-size: 100% 302px, 320px 300px, 100% 302px;
+  background-size: 100% 62.8%, 320px 300px, 100% 62.8%;
   background-image: linear-gradient($color-cat-overley, $color-cat-overley),
     url("../../img/backgrounds/index-background-mobile.jpg"),
     linear-gradient($color-cat-background, $color-cat-background);
   background-position: center top;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient($color-cat-overley, $color-cat-overley),
+      url("../../img/backgrounds/index-background-mobile@2x.jpg"),
+      linear-gradient($color-cat-background, $color-cat-background);
+  }
+
+  @media (min-resolution: 3dppx) {
+    background-image: linear-gradient($color-cat-overley, $color-cat-overley),
+      url("../../img/backgrounds/index-background-mobile@3x.jpg"),
+      linear-gradient($color-cat-background, $color-cat-background);
+  }
 
   @media (min-width: $tablet-min-width) {
     color: $color-black;
@@ -18,13 +31,14 @@
     padding-left: 87px;
     padding-right: 87px;
     background-image: none;
+    padding-bottom: 0;
   }
 
   @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     &::after {
       content: "";
       display: block;
-      padding-bottom: 540px;
+      padding-bottom: 510px;
     }
   }
 
@@ -32,6 +46,7 @@
     padding-left: 0;
     padding-right: 0;
     min-height: 696px;
+    margin-bottom: 79px;
 
     &::after {
       content: "";
@@ -47,28 +62,67 @@
       background-image: linear-gradient($color-cat-overley, $color-cat-overley),
         url("../../img/backgrounds/index-background-desktop.jpg"),
         linear-gradient($color-cat-desktop-bg, $color-cat-desktop-bg);
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient($color-cat-overley, $color-cat-overley),
+          url("../../img/backgrounds/index-background-desktop@2x.jpg"),
+          linear-gradient($color-cat-desktop-bg, $color-cat-desktop-bg);
+      }
+
+      @media (min-resolution: 3dppx) {
+        background-image: linear-gradient($color-cat-overley, $color-cat-overley),
+          url("../../img/backgrounds/index-background-desktop@3x.jpg"),
+          linear-gradient($color-cat-desktop-bg, $color-cat-desktop-bg);
+      }
     }
   }
 }
 
-.promo__title {
-  max-width: 420px;
-  margin: 25px auto 41px auto;
-
+.promo__wrapper {
   @media (min-width: $tablet-min-width) {
     max-width: 600px;
-    margin: 64px auto 41px 0;
+    padding-left: 30px;
   }
 
   @media (min-width: $desktop-min-width) {
-    margin: 223px auto 40px 0;
+    max-width: 575px;
+    padding-left: 80px;
+  }
+}
+
+.promo__title {
+  max-width: 95%;
+  margin: 25px auto 26px auto;
+
+  @media (min-width: $tablet-min-width) {
+    max-width: 600px;
+    margin: 29px 0 41px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    max-width: 475px;
+    margin: 223px 0 39px;
+  }
+}
+
+.promo__slogan {
+  max-width: 95%;
+  margin: 26px auto 29px;
+
+  @media (min-width: $tablet-min-width) {
+    margin: 26px 0 46px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    max-width: 475px;
+    margin-bottom: 49px;
   }
 }
 
 .promo__can-image {
   @media (min-width: $tablet-min-width) {
     position: absolute;
-    bottom: 0;
+    bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
     width: 709px;
@@ -89,7 +143,21 @@
 }
 
 .promo__button {
+  margin-top: 2px;
+
   @media (min-width: $tablet-min-width) {
     display: inline-block;
+    padding: 18px 26px;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    font-size: 20px;
+    line-height: 1;
+    max-width: 300px;
+    margin-left: -5px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-left: 0;
   }
 }

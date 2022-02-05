@@ -8,12 +8,13 @@
   border: none;
   cursor: pointer;
   color: $color-dark-grey-700;
+  padding: 17.5px 27px;
 }
 
 .button--success {
   color: $color-white;
   background-color: $color-green-100;
-  padding: 12px;
+  padding: 13px;
 }
 
 .button--neutral {
@@ -39,7 +40,7 @@
   line-height: 1;
   display: inline-block;
   position: relative;
-  padding-right: 45px;
+  padding-right: 12px;
   color: $color-black;
 
   &::after,
@@ -51,17 +52,33 @@
   }
 
   &::before {
-    right: 20px;
-    width: 18px;
+    right: -23px;
+    width: 19px;
     height: 2px;
     background-color: $color-black;
+
+    @media (min-width: $tablet-min-width) {
+      right: -33px;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      right: -35px;
+    }
   }
 
   &::after {
-    right: 0;
-    border: 10px solid transparent;
-    border-top-width: 8px;
-    border-bottom-width: 8px;
+    right: -34px;
+    border: 6px solid transparent;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
     border-left-color: $color-black;
+
+    @media (min-width: $tablet-min-width) {
+      right: -44px;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      right: -46px;
+    }
   }
 }

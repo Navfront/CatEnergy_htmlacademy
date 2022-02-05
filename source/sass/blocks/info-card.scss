@@ -1,132 +1,183 @@
 .info-card {
   background-color: $color-grey-100;
   position: relative;
-  padding: 0 20px 20px 20px;
+  padding: 30px 20px 12px;
 
-  &::before,
-  &::after {
+  &::before {
     content: "";
-    position: absolute;
-    left: 29px;
-    top: 19px;
+    float: left;
+    margin: -5px 19px 0 2px;
+    display: inline;
     width: 50px;
     height: 50px;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-color: $color-green-100;
+    border-radius: 50%;
 
     @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-      left: auto;
-      top: 50%;
-      right: 62px;
+      float: none;
+      position: absolute;
+      right: 42px;
+      top: 53%;
       width: 200px;
       height: 200px;
       transform: translateY(-50%);
-      background-size: contain;
     }
 
     @media (min-width: $desktop-min-width) {
-      left: 29px;
-      top: 47px;
       width: 100px;
       height: 100px;
-      background-size: contain;
     }
-  }
-
-  &::before {
-    border-radius: 50%;
-    background-color: $color-green-100;
   }
 
   &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: contain;
   }
 
-  hr {
-    @media (min-width: $desktop-min-width) {
-      display: none;
+  & > *:nth-child(2) {
+    margin-top: 30px;
+
+    @media (min-width: $tablet-min-width) {
+      margin-top: 15px;
     }
+  }
+
+  @media (min-width: $tablet-min-width) {
+    padding: 68px 51px 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    padding: 53px 51px 53px;
+    display: grid;
+    grid-template-columns: 163px 1fr;
+    grid-template-rows: minmax(119px, auto);
+    grid-auto-rows: auto;
+    justify-content: start;
   }
 }
 
 .info-card--slim {
   &::after {
-    top: 15px;
     background-image: url("../img/icons/cat-slim.svg");
+    width: 36px;
+    height: 50px;
+    left: 29px;
+    top: 22px;
 
     @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+      width: 140px;
+      height: 192px;
       left: auto;
-      top: 50%;
-      right: 62px;
-      width: 200px;
-      height: 200px;
+      right: 90px;
+      top: 53%;
+      transform: translateY(-60%);
     }
 
     @media (min-width: $desktop-min-width) {
-      left: 29px;
-      top: 47px;
-      width: 100px;
-      height: 100px;
+      width: 70px;
+      height: 97px;
+      left: 66px;
+      top: 42px;
+    }
+  }
+
+  p {
+    @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+      max-width: calc(100% - 225px);
     }
   }
 }
 
 .info-card--pro {
   &::after {
-    left: 18px;
-    top: 31px;
+    background-image: url("../img/icons/cat-pro.svg");
     width: 67px;
     height: 28px;
-    background-image: url("../img/icons/cat-pro.svg");
+    left: 13px;
+    top: 36px;
 
     @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+      width: 268px;
+      height: 112.3px;
       left: auto;
-      top: 50%;
-      right: 62px;
-      width: 200px;
-      height: 200px;
+      right: 28px;
+      top: 53%;
+      transform: translateY(-56%);
     }
 
     @media (min-width: $desktop-min-width) {
-      left: 29px;
-      top: 47px;
-      width: 100px;
-      height: 100px;
+      width: 134px;
+      height: 56px;
+      left: 33px;
+      top: 68px;
     }
   }
-}
 
-.info-card__wrapper {
-  @media (min-width: $tablet-min-width) {
-    padding-left: 52px;
-    padding-bottom: 53px;
-    padding-top: 53px;
-    min-height: 372px;
-    max-width: 64%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  @media (min-width: $desktop-min-width) {
-    height: 100%;
-    padding: 51px;
-    max-width: initial;
+  p {
+    @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+      max-width: calc(100% - 265px);
+    }
   }
 }
 
 .info-card__title {
-  margin-left: 80px;
+  display: inline;
+  vertical-align: middle;
+  grid-column: 2;
+
+  justify-self: start;
 
   @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-    margin-left: 0;
+    margin: 0 2px;
+    max-width: 50%;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin: 15px 0 25px;
   }
 }
 
 .info-card__text {
+  grid-column: 1 / -1;
   font-family: "Arial", sans-serif;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    max-width: 384px;
+    margin-bottom: 47px;
+  }
+}
+
+.info-card__line {
+  margin-bottom: 8px;
+  height: 1px;
+  background-color: $color-grey-170;
+  border: none;
+
+  @media (min-width: $tablet-min-width) {
+    display: none;
+  }
 }
 
 .info-card__link {
+  grid-column: 1 / -1;
+  justify-self: start;
   margin-top: auto;
+  font-size: 16px;
+  line-height: 1;
+  padding: 10px 12px 10px 0;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 20px;
+    align-self: flex-start;
+  }
 }
