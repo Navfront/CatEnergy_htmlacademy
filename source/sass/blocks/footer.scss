@@ -1,11 +1,22 @@
 .footer {
-  padding-top: 1px;
+  @media (min-width: $desktop-min-width) {
+    background-color: $color-grey-100;
+  }
 }
 
 .footer__socials-wrapper {
+  background-color: $color-grey-100;
+  padding: 36px 20px 19px;
+
   @media (min-width: $tablet-min-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 48px 30px 53px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    min-height: 147px;
+    padding: 49px 0 52px;
   }
 }
 
@@ -15,11 +26,25 @@
   }
 }
 
+.footer__logo-image {
+  height: 25px;
+  width: 128px;
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 29px;
+  }
+}
+
 .footer__academy-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: $color-dark-grey-100;
+  margin-right: -6px;
+
+  @media (max-width: $mobile-max-width) {
+    margin: 16px 0;
+  }
 
   @media (min-width: $tablet-min-width) {
     justify-content: flex-end;
@@ -27,5 +52,14 @@
 }
 
 .footer__academy-icon {
+  margin-top: 2px;
   fill: $color-grey-500;
+  width: 40px;
+  height: 40px;
+  margin-right: -6px;
+
+  @media (min-width: $tablet-min-width) {
+    margin-right: 0;
+    margin-left: 17px;
+  }
 }

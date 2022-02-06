@@ -22,6 +22,7 @@
   @media (min-width: $desktop-min-width) {
     grid-template-columns: 1fr 1fr;
     gap: 80px;
+    margin-bottom: 0;
   }
 }
 

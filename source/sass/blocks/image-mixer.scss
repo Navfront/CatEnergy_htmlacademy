@@ -2,12 +2,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .image-mixer__photo-cutter {
   position: relative;
   width: 312px;
   height: 232px;
+
+  @media (min-width: $tablet-min-width) {
+    width: 708px;
+    height: 620px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    width: 690px;
+    height: 599px;
+  }
 }
 
 .image-mixer__photo {
@@ -17,17 +28,69 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-51%, -50%);
+
+  @media (min-width: $tablet-min-width) {
+    width: 708px;
+    height: 620px;
+    transform: translate(-50%, -49%);
+  }
+
+  @media (min-width: $desktop-min-width) {
+    width: 690px;
+    height: 656px;
+    transform: translate(-44.1%, -54.5%);
+  }
 }
 
 .image-mixer__photo--before {
-  clip: rect(auto, 156px, auto, auto);
+  @media (min-width: $tablet-min-width) {
+    clip: rect(auto, 354px, auto, auto);
+  }
+
+  @media (min-width: $desktop-min-width) {
+    clip: rect(auto, 364px, auto, auto);
+  }
 }
 
 .image-mixer__photo--after {
-  clip: rect(auto, auto, auto, 156px);
+  @media (min-width: $tablet-min-width) {
+    clip: rect(auto, auto, auto, 354px);
+  }
+
+  @media (min-width: $desktop-min-width) {
+    clip: rect(auto, auto, auto, 364px);
+  }
 }
 
 .image-mixer__photo--disabled {
-  display: none;
+  @media (max-width: $mobile-max-width) {
+    display: none;
+  }
+}
+
+.image-mixer__controls {
+  padding-top: 33px;
+  min-height: 88px;
+
+  @media (min-width: $tablet-min-width) {
+    position: absolute;
+    left: 50%;
+    bottom: 33px;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    display: flex;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    left: 59%;
+    top: 504px;
+    bottom: initial;
+  }
+}
+
+.image-mixer__range {
+  @media (min-width: $tablet-min-width) {
+    width: 428px;
+  }
 }

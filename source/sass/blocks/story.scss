@@ -1,9 +1,16 @@
 .story {
+  padding: 0 20px;
   background-color: $color-grey-50;
 
-  @media (min-width: $desktop-min-width) {
+  @media (min-width: $tablet-min-width) {
+    padding: 0 30px 37px;
     background-color: $color-white;
-    background-image: linear-gradient(transparent 35%, $color-grey-50 35%, $color-grey-50);
+    background-image: linear-gradient(transparent 599px, $color-grey-50 2px, $color-grey-50);
+  }
+
+  @media (min-width: $desktop-min-width) {
+    padding: 0;
+    background-image: linear-gradient(transparent 138px, $color-grey-100 138px, $color-grey-100);
   }
 }
 
@@ -12,4 +19,42 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.story__info-block {
+  @media (min-width: $desktop-min-width) {
+    max-width: 435px;
+  }
+}
+
+.story__title {
+  margin-top: 28px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-min-width) {
+    margin-top: 23px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-top: 2px;
+    margin-bottom: 146px;
+  }
+}
+
+.story__text {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-min-width) {
+    margin-bottom: 54px;
+    max-width: 700px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.story__achives {
+  margin-bottom: 42px;
 }
