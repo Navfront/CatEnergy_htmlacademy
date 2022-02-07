@@ -29,15 +29,3 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.topfix::before {
-  content: "";
-  overflow: hidden;
-  display: block;
-}

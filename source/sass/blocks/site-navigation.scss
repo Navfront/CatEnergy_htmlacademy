@@ -20,6 +20,24 @@
   }
 }
 
+.site-navigation--closed {
+  @media (max-width: $mobile-max-width) {
+    .site-navigation__top-wrapper {
+      padding-bottom: 0;
+    }
+
+    .site-navigation__logo::before {
+      height: 53px;
+      margin-bottom: 6px;
+      margin-left: -3px;
+    }
+
+    .site-navigation__button-burger {
+      margin-left: 13px;
+    }
+  }
+}
+
 .site-navigation__top-wrapper {
   display: flex;
   align-items: center;
