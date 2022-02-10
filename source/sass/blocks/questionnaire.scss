@@ -1,5 +1,5 @@
 .questionnaire {
-  padding: 0 20px;
+  overflow-x: hidden;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -17,7 +17,8 @@
 }
 
 .questionnaire__header {
-  margin-bottom: 39px;
+  padding: 0 20px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-min-width) {
     margin-bottom: 66px;
@@ -43,7 +44,7 @@
 
 .questionnaire__slogan {
   max-width: 270px;
-  margin: 20px 0;
+  margin: 20px 0 17px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;

@@ -9,10 +9,11 @@
 }
 
 .form__cat-program {
+  padding: 20px;
+  margin-bottom: 22px;
   border: 1px solid $color-grey-150;
   border-left: none;
   border-right: none;
-  margin-bottom: 27px;
 
   @media (min-width: $tablet-min-width) {
     border: 1px solid $color-grey-150;
@@ -25,14 +26,33 @@
   }
 }
 
+.form__cat-data {
+  margin-bottom: 19px;
+}
+
 .form__owner-contacts {
+  margin-bottom: 15px;
   grid-column: 1/-1;
 }
 
 .form__comments {
+  margin-bottom: 15px;
   grid-column: 1/-1;
 }
 
 .form__additionally {
+  margin-bottom: 25px;
   grid-column: 1/-1;
+
+  h3 {
+    margin-bottom: 31px;
+  }
+}
+
+.form__subtext {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  margin: 23px 0 25px;
 }
