@@ -1,41 +1,35 @@
 .card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 6px 20px 20px;
+  grid-template-columns: 140px 1fr;
+  padding: 20px;
   height: 100%;
-  text-align: center;
-
-  @media (max-width: $mobile-max-width) {
-    border-bottom: 1px solid $color-grey-200;
-  }
-
-  @media (min-width: $tablet-min-width) {
-    padding: 20px;
-  }
 }
 
-.card__wrapper {
+.card--others {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  @media (min-width: $tablet-min-width) {
+    border: 1px solid $color-grey-200;
+  }
 }
 
 .card__link-image {
   grid-column: 1;
-  position: relative;
-  padding-bottom: 58%;
   display: block;
+  height: 124px;
+  width: 140px;
 }
 
-.card__image {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  min-height: 112px;
+.card__link-image--others {
+  height: 40px;
+  margin: 0 auto;
+  background-image: url("data:image/svg+xml, %3Csvg width='30' height='30' viewBox='0 0 30 30' fill='%23D3D3D3'%0Axmlns='http://www.w3.org/2000/svg' %3E%3Cpolygon points='0,14 0,15 30,15 30,14'/%3E%3Cpolygon points='14,0 15,0 15,30 14,30'/%3E /%3E%3C/svg%3E");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  margin-bottom: 18px;
 }
 
 .card__description {
@@ -47,6 +41,11 @@
 .card__button {
   grid-column: 1/-1;
   width: 100%;
+  align-self: flex-end;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
+  margin-bottom: 4px;
 }
 
 .card__title {
@@ -54,15 +53,40 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 1.25;
   display: flex;
   justify-content: start;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
-.card__title--center {
-  justify-content: center;
+.card__title-link {
+  text-decoration: none;
+  color: $color-dark-grey-700;
+}
+
+.card__title--others {
+  margin: 0 auto 10px;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+}
+
+.card__text {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1.33;
+  margin: 0 auto 20px;
+  grid-column: 1 / -1;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 16px;
+    line-height: 1.12;
+  }
 }
 
 .card__characteristics {
@@ -71,20 +95,19 @@
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-.card__characteristics dd {
-  margin-left: 0;
+  font-size: 12px;
+  line-height: 1.25;
 }
 
 .card__characteristics-line {
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding-bottom: 5px;
   max-width: 138px;
+
+  dd {
+    margin-left: 0;
+  }
 
   @media (min-width: $tablet-min-width) {
     &::after {
@@ -96,29 +119,5 @@
       height: 1px;
       background-color: $color-grey-300;
     }
-  }
-}
-
-.card--others {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  .card__wrapper::before {
-    content: "";
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-image: url("data:image/svg+xml, %3Csvg width='30' height='30' viewBox='0 0 30 30' fill='%23D3D3D3'%0Axmlns='http://www.w3.org/2000/svg' %3E%3Cpolygon points='0,14 0,15 30,15 30,14'/%3E%3Cpolygon points='14,0 15,0 15,30 14,30'/%3E /%3E%3C/svg%3E");
-    background-size: contain;
-
-    @media (min-width: $tablet-min-width) {
-      width: 60px;
-      height: 60px;
-    }
-  }
-
-  @media (min-width: $tablet-min-width) {
-    border: 1px solid $color-grey-200;
   }
 }

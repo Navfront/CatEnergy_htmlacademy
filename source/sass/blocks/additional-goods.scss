@@ -1,4 +1,6 @@
 .additional-goods {
+  padding: 0 20px;
+
   @media (min-width: $desktop-min-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -8,6 +10,8 @@
 
 .additional-goods__heading {
   grid-column: 1/-1;
+  max-width: 100%;
+  margin-bottom: 34px;
 }
 
 .additional-goods__wrapper {
@@ -17,11 +21,12 @@
 .additional-goods__list {
   padding-left: 0;
   list-style: none;
+  margin-bottom: 40px;
 }
 
 .additional-goods__item {
   border-top: 1px solid $color-grey-200;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
 }
 
 .additional-goods__item + .additional-goods__item {

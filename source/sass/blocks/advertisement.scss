@@ -1,0 +1,33 @@
+.advertisement {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  padding: 26px 58px;
+  position: relative;
+  padding-top: 56px;
+  background-color: $color-cat-overley;
+  margin-bottom: 34px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/icons/icon_gift.svg");
+    margin-bottom: 18%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.advertisement__text {
+  color: $color-white;
+}
