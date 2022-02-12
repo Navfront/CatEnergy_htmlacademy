@@ -1,5 +1,4 @@
 .questionnaire {
-  overflow-x: hidden;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -8,7 +7,7 @@
   color: $color-dark-grey-100;
 
   @media (min-width: $tablet-min-width) {
-    padding: 0 31px 0 70px;
+    padding: 0 67px 0 70px;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -21,6 +20,7 @@
   margin-bottom: 33px;
 
   @media (min-width: $tablet-min-width) {
+    padding: 0;
     margin-bottom: 66px;
   }
 }

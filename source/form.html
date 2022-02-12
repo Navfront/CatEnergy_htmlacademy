@@ -129,8 +129,14 @@
               >Не знаю (Нужен ваш совет)</label
             >
           </div>
-          <div class="form__owner-contacts fieldset" role="group">
-            <h3 class="heading-decored">Контактные данные (владельца кота)</h3>
+          <div
+            class="form__owner-contacts fieldset fieldset--desktop-grid"
+            role="group"
+          >
+            <h3 class="fieldset__heading-decored heading-decored">
+              <span class="heading-decored__line"></span>
+              Контактные данные (владельца кота)
+            </h3>
             <label class="fieldset__label"
               >E-mail:*
               <input
@@ -226,7 +232,10 @@
             </label>
           </div>
           <div class="form__comments fieldset" role="group">
-            <h3 class="heading-decored">Комментарий</h3>
+            <h3 class="fieldset__heading-decored heading-decored">
+              <span class="heading-decored__line"></span>
+              Комментарий
+            </h3>
 
             <label for="comments-area" class="visually-hidden"
               >Оставьте свой комментарий</label
@@ -242,7 +251,10 @@
             class="form__additionally fieldset fieldset--checkboxes"
             role="group"
           >
-            <h3 class="heading-decored">Дополнительно</h3>
+            <h3 class="fieldset__heading-decored heading-decored">
+              <span class="heading-decored__line"></span>
+              Дополнительно
+            </h3>
 
             <input
               class="fieldset__toggler fieldset__toggler--checkbox visually-hidden"
@@ -277,14 +289,15 @@
               name="adds[]"
               value="vitamins"
               id="add-vitamins"
+              s
             />
             <label class="fieldset__label" for="add-vitamins">витамины</label>
           </div>
-          <div class="fieldset fieldset--horizontal">
-            <button type="submit" class="button button--success button--submit">
+          <div class="form__submit-wrapper fieldset fieldset--horizontal">
+            <button type="submit" class="button button--submit">
               отправить заявку
             </button>
-            <p class="form__subtext">* — Обязательные поля</p>
+            <p class="fieldset__subtext">* — Обязательные поля</p>
           </div>
         </form>
       </section>

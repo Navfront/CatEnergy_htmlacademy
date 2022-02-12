@@ -1,5 +1,4 @@
 .heading-decored {
-  position: relative;
   font-size: 24px;
   line-height: 26px;
   font-weight: normal;
@@ -8,17 +7,34 @@
   padding-right: 23px;
   max-width: 204px;
   width: fit-content;
-  margin: 0;
-  margin-bottom: 34px;
 
-  &::after {
-    content: "";
-    position: absolute;
+  @media (min-width: $tablet-min-width) {
+    line-height: 1;
+    font-size: 36px;
+    max-width: 100%;
+    padding-left: 40px;
+    margin-left: -40px;
+    padding-right: 40px;
+  }
+}
+
+.heading-decored__line {
+  position: absolute;
+  left: 20px;
+  right: 0;
+  line-height: 0;
+  font-size: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95vw;
+  height: 2px;
+  background-color: $color-green-100;
+  margin-top: 15px;
+  z-index: -1;
+
+  @media (min-width: $tablet-min-width) {
     left: 0;
-    top: 15px;
+    margin-top: 22px;
     width: 100vw;
-    height: 2px;
-    background-color: $color-green-100;
-    z-index: -1;
   }
 }

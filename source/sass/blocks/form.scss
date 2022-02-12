@@ -3,14 +3,25 @@
   grid-template-columns: 1fr;
 
   @media (min-width: $desktop-min-width) {
-    gap: 80px;
+    gap: 20px 80px;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form__cat-data {
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-min-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin: 0;
   }
 }
 
 .form__cat-program {
   padding: 20px;
-  margin-bottom: 22px;
   border: 1px solid $color-grey-150;
   border-left: none;
   border-right: none;
@@ -18,26 +29,41 @@
   @media (min-width: $tablet-min-width) {
     border: 1px solid $color-grey-150;
     border-radius: 0;
-    margin-bottom: 72px;
+    margin-bottom: 40px;
+    padding: 27px 22px 27px 27px;
   }
 
   @media (min-width: $desktop-min-width) {
-    margin-bottom: 69px;
+    margin: 0;
   }
 }
 
-.form__cat-data {
-  margin-bottom: 19px;
-}
-
 .form__owner-contacts {
-  margin-bottom: 15px;
   grid-column: 1/-1;
+  margin-bottom: -5px;
+
+  @media (min-width: $tablet-min-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__comments {
-  margin-bottom: 15px;
+  margin-bottom: -5px;
   grid-column: 1/-1;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-min-width) {
+    margin-bottom: 28px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-bottom: -3px;
+  }
 }
 
 .form__additionally {
@@ -47,12 +73,22 @@
   h3 {
     margin-bottom: 31px;
   }
+
+  @media (min-width: $tablet-min-width) {
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-bottom: 26px;
+  }
 }
 
-.form__subtext {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  margin: 23px 0 25px;
+.form__submit-wrapper {
+  @media (min-width: $tablet-min-width) {
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-bottom: 81px;
+  }
 }

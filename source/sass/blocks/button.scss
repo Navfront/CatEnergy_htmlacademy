@@ -24,7 +24,8 @@
 }
 
 .button--submit {
-  font-family: "Oswald", "Arial", sans-serif;
+  background-color: $color-green-100;
+  color: $color-white;
   font-size: 16px;
   line-height: 1.25;
   padding: 10px;
@@ -32,6 +33,8 @@
 
   @media (min-width: $tablet-min-width) {
     width: 282px;
+    font-size: 20px;
+    padding: 13px 45px;
   }
 
   @media (min-width: $desktop-min-width) {
