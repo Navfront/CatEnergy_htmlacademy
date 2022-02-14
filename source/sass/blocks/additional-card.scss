@@ -1,4 +1,4 @@
-.additionals-card {
+.additional-card {
   display: grid;
   gap: 0 80px;
   align-items: center;
@@ -13,8 +13,15 @@
   }
 }
 
-.additionals-card__title {
+.additional-card__title {
+  margin: 12px 0 0;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: normal;
+  text-transform: uppercase;
+
   @media (min-width: $tablet-min-width) {
+    font-size: 20px;
     grid-column: 1 / span 2;
   }
 
@@ -23,11 +30,16 @@
   }
 }
 
-.additionals-card__packaging {
+.additional-card__packaging {
   display: flex;
   justify-content: space-between;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1;
 
   @media (min-width: $tablet-min-width) {
+    font-size: 16px;
+    line-height: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: -3 / -1;
@@ -38,7 +50,7 @@
   }
 }
 
-.additionals-card__package {
+.additional-card__package {
   @media (min-width: $tablet-min-width) {
     justify-self: end;
   }
@@ -49,7 +61,7 @@
   }
 }
 
-.additionals-card__price {
+.additional-card__price {
   @media (min-width: $tablet-min-width) {
     justify-self: center;
   }
@@ -60,7 +72,12 @@
   }
 }
 
-.additionals-card__button {
+.additional-card__button {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: -2px;
+
   @media (min-width: $tablet-min-width) {
     grid-column: 1 / -1;
   }
