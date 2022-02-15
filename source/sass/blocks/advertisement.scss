@@ -9,15 +9,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(../../img/backgrounds/gift-photo-mobile.jpg);
+  background-image: url("../img/backgrounds/gift-photo-mobile.jpg");
   margin-bottom: 34px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../../img/backgrounds/gift-photo-mobile@2x.jpg);
+    background-image: url("../img/backgrounds/gift-photo-mobile@2x.jpg");
   }
 
   @media (min-resolution: 3dppx) {
-    background-image: url(../../img/backgrounds/gift-photo-mobile@3x.jpg);
+    background-image: url("../img/backgrounds/gift-photo-mobile@3x.jpg");
   }
 
   &::before {
