@@ -12,8 +12,7 @@
 }
 
 .card--others {
-  display: flex;
-  flex-direction: column;
+  grid-template-columns: 1fr;
 
   @media (min-width: $tablet-min-width) {
     border: 1px solid $color-grey-200;
@@ -58,8 +57,9 @@
   }
 }
 
-.card__link-image--others {
+.card__link-plus {
   height: 40px;
+  width: 40px;
   margin: 0 auto;
   background-image: url("data:image/svg+xml, %3Csvg width='30' height='30' viewBox='0 0 30 30' fill='%23D3D3D3'%0Axmlns='http://www.w3.org/2000/svg' %3E%3Cpolygon points='0,14 0,15 30,15 30,14'/%3E%3Cpolygon points='14,0 15,0 15,30 14,30'/%3E /%3E%3C/svg%3E");
 
@@ -86,7 +86,7 @@
   font-size: 16px;
   line-height: 20px;
   padding: 10px;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-min-width) {
     width: 87.5%;
@@ -122,6 +122,7 @@
 
 .card__title--others {
   margin: 0 auto 10px;
+  max-width: none;
 
   @media (min-width: $tablet-min-width) {
     font-size: 20px;

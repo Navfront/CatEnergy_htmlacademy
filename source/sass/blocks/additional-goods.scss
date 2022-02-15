@@ -11,6 +11,7 @@
 .additional-goods__heading {
   grid-column: 1/-1;
   max-width: 100%;
+  margin-top: 16px;
   margin-bottom: 34px;
 }
 
@@ -21,12 +22,12 @@
 .additional-goods__list {
   padding-left: 0;
   list-style: none;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .additional-goods__item {
   border-top: 1px solid $color-grey-200;
-  padding-bottom: 19px;
+  padding-bottom: 19.5px;
 }
 
 .additional-goods__item + .additional-goods__item {
