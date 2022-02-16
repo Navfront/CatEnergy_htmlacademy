@@ -23,8 +23,9 @@
   @media (min-width: $tablet-min-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 47px 60px;
+    gap: 49px 60px;
     padding: 0 30px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -37,6 +38,10 @@
 .catalog__item {
   @media (max-width: $mobile-max-width) {
     border-top: 1px solid $color-grey-200;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    padding-top: 92px;
   }
 }
 

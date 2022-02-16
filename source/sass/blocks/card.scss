@@ -5,9 +5,10 @@
   height: 100%;
 
   @media (min-width: $tablet-min-width) {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-grey-100;
     text-align: center;
-    background-image: linear-gradient(to top, $color-grey-100 82.3%, transparent 82.3%);
   }
 }
 
@@ -16,7 +17,22 @@
 
   @media (min-width: $tablet-min-width) {
     border: 1px solid $color-grey-200;
-    background-image: none;
+    background-color: transparent;
+  }
+}
+
+.card--others h3 {
+  @media (min-width: $tablet-min-width) {
+    margin-bottom: 24px;
+    flex-grow: 0;
+  }
+}
+
+.card--others .card__description {
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-min-width) {
+    padding: 0 55px;
   }
 }
 
@@ -24,31 +40,27 @@
   position: relative;
   grid-column: 1;
   display: block;
-
-  @media (max-width: $mobile-max-width) {
-    width: 100%;
-    margin-left: auto;
-    padding-bottom: 30vw;
-  }
+  width: 100%;
 
   @media (min-width: $tablet-min-width) {
-    margin-bottom: 30px;
+    margin-bottom: 141px;
   }
 }
 
 .card__image {
-  @media (max-width: $mobile-max-width) {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 90%;
-    width: 100%;
-    object-fit: contain;
-  }
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 90%;
+  width: 100%;
+  object-fit: contain;
 
   @media (min-width: $tablet-min-width) {
+    top: -93px;
     width: 168px;
     height: 200px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -62,11 +74,17 @@
   width: 40px;
   margin: 0 auto;
   background-image: url("data:image/svg+xml, %3Csvg width='30' height='30' viewBox='0 0 30 30' fill='%23D3D3D3'%0Axmlns='http://www.w3.org/2000/svg' %3E%3Cpolygon points='0,14 0,15 30,15 30,14'/%3E%3Cpolygon points='14,0 15,0 15,30 14,30'/%3E /%3E%3C/svg%3E");
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px;
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-min-width) {
+    height: 60px;
+    width: 60px;
+    background-size: 60px;
+    margin: 32px auto 48px;
+  }
 }
 
 .card__description {
@@ -90,11 +108,12 @@
 
   @media (min-width: $tablet-min-width) {
     width: 87.5%;
-    margin: 0 auto 19px;
+    margin: auto auto 19px;
   }
 }
 
 .card__title {
+  flex: 1 0 auto;
   color: $color-black;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;

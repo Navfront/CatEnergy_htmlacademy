@@ -1,10 +1,12 @@
 .additional-card {
   display: grid;
   gap: 0 80px;
-  align-items: center;
+  align-items: baseline;
 
   @media (min-width: $tablet-min-width) {
     grid-template-columns: repeat(4, 1fr);
+    padding: 16px 38px 28px;
+    gap: 7px 30px;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -23,6 +25,7 @@
   @media (min-width: $tablet-min-width) {
     font-size: 20px;
     grid-column: 1 / span 2;
+    margin: 0;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -34,15 +37,15 @@
   display: flex;
   justify-content: space-between;
   font-family: "Arial", sans-serif;
+  align-items: center;
+
   font-size: 14px;
   line-height: 1;
 
   @media (min-width: $tablet-min-width) {
     font-size: 16px;
-    line-height: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-column: -3 / -1;
+    justify-content: end;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -51,10 +54,6 @@
 }
 
 .additional-card__package {
-  @media (min-width: $tablet-min-width) {
-    justify-self: end;
-  }
-
   @media (min-width: $desktop-min-width) {
     grid-column: 3 / 4;
     justify-self: start;
@@ -63,7 +62,8 @@
 
 .additional-card__price {
   @media (min-width: $tablet-min-width) {
-    justify-self: center;
+    flex: 0 0 92px;
+    text-align: end;
   }
 
   @media (min-width: $desktop-min-width) {

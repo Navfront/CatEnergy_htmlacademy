@@ -27,9 +27,33 @@
     height: 80px;
     background-image: url("../img/icons/icon_gift.svg");
     margin-bottom: 18%;
+
+    @media (min-width: $tablet-min-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet-min-width) {
+    display: flex;
+    padding: 55px 78px 53px;
+    margin-bottom: 75px;
+
+    background-image: url("../../img/backgrounds/gift-photo-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/gift-photo-tablet@2x.jpg");
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url("../img/backgrounds/gift-photo-tablet@3x.jpg");
+    }
   }
 }
 
 .advertisement__text {
   color: $color-white;
+  flex: 0 0 161px;
+  margin-left: auto;
+  margin-right: 46px;
+  text-align: left;
 }
