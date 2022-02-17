@@ -58,6 +58,28 @@
   text-transform: uppercase;
   border: 1px solid $color-grey-150;
 
+  &:invalid {
+    border-color: $color-status-error;
+    border-width: 2px;
+  }
+
+  &:invalid + svg * {
+    stroke: $color-status-error;
+  }
+
+  &:hover {
+    border-color: $color-grey-300;
+  }
+
+  &:focus {
+    border-color: $color-dark-grey-100;
+    border-width: 2px;
+  }
+
+  &:focus + svg * {
+    stroke: $color-green-100;
+  }
+
   &::placeholder {
     color: $color-dark-grey-100;
   }
@@ -194,6 +216,13 @@
     content: "";
     position: absolute;
   }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: $color-black-03;
+    }
+  }
 }
 
 .fieldset__toggler--radio + .fieldset__label {
@@ -234,6 +263,16 @@
 .fieldset__toggler--radio:checked + .fieldset__label {
   &::after {
     background-color: $color-green-100;
+  }
+}
+
+.fieldset__toggler:disabled + .fieldset__label {
+  opacity: 0.3;
+}
+
+.fieldset__toggler:focus + .fieldset__label {
+  &::before {
+    border-color: $color-dark-grey-100;
   }
 }
 

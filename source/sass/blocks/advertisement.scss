@@ -31,13 +31,16 @@
     @media (min-width: $tablet-min-width) {
       margin-bottom: 0;
     }
+
+    @media (min-width: $desktop-min-width) {
+      margin-bottom: 48px;
+    }
   }
 
   @media (min-width: $tablet-min-width) {
     display: flex;
     padding: 55px 78px 53px;
     margin-bottom: 75px;
-
     background-image: url("../../img/backgrounds/gift-photo-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -48,6 +51,22 @@
       background-image: url("../img/backgrounds/gift-photo-tablet@3x.jpg");
     }
   }
+
+  @media (min-width: $desktop-min-width) {
+    display: block;
+    text-align: center;
+    width: 245px;
+    padding: 55px 30px 42px;
+    background-image: url("../../img/backgrounds/gift-photo-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/gift-photo-desktop@2x.jpg");
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url("../img/backgrounds/gift-photo-desktop@3x.jpg");
+    }
+  }
 }
 
 .advertisement__text {
@@ -56,4 +75,9 @@
   margin-left: auto;
   margin-right: 46px;
   text-align: left;
+
+  @media (min-width: $desktop-min-width) {
+    text-align: center;
+    margin: 0;
+  }
 }

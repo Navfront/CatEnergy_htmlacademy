@@ -121,6 +121,15 @@
   text-transform: uppercase;
   position: relative;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-min-width) {
     font-weight: normal;
     font-size: 18px;
@@ -145,23 +154,19 @@
       background-color: $color-green-100;
     }
   }
-
-  @media (min-width: $tablet-min-width) {
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -8px;
-      height: 2px;
-      background-color: $color-white;
-    }
-  }
 }
 
 .site-navigation--index .site-navigation__link {
   @media (min-width: $desktop-min-width) {
     color: $color-white;
+  }
+}
+
+.site-navigation--index .site-navigation__link--current {
+  @media (min-width: $desktop-min-width) {
+    &::before {
+      background-color: $color-white;
+    }
   }
 }
 

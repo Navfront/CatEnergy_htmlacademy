@@ -15,12 +15,30 @@
   color: $color-white;
   background-color: $color-green-100;
   padding: 13px;
+
+  &:hover,
+  &:focus {
+    background-color: $color-green-200;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .button--neutral {
   color: $color-dark-grey-100;
   background-color: $color-grey-100;
   padding: 12px;
+
+  &:hover,
+  &:focus {
+    background-color: $color-grey-200;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .button--submit {
@@ -87,5 +105,37 @@
     @media (min-width: $desktop-min-width) {
       right: -46px;
     }
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      right: -31px;
+      width: 27px;
+
+      @media (min-width: $tablet-min-width) {
+        right: -41px;
+      }
+
+      @media (min-width: $desktop-min-width) {
+        right: -43px;
+      }
+    }
+
+    &::after {
+      right: -42px;
+
+      @media (min-width: $tablet-min-width) {
+        right: -52px;
+      }
+
+      @media (min-width: $desktop-min-width) {
+        right: -54px;
+      }
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

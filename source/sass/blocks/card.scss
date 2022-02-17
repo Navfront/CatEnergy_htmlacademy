@@ -34,6 +34,10 @@
   @media (min-width: $tablet-min-width) {
     padding: 0 55px;
   }
+
+  @media (min-width: $desktop-min-width) {
+    padding: 0 15px;
+  }
 }
 
 .card__link-image {
@@ -66,6 +70,7 @@
   @media (min-width: $desktop-min-width) {
     width: 172px;
     height: 196px;
+    top: -99px;
   }
 }
 
@@ -110,6 +115,10 @@
     width: 87.5%;
     margin: auto auto 19px;
   }
+
+  @media (min-width: $desktop-min-width) {
+    width: 168px;
+  }
 }
 
 .card__title {
@@ -131,6 +140,11 @@
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    line-height: 1.05;
+    margin-bottom: 8px;
   }
 }
 
