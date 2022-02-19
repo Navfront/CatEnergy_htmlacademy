@@ -33,6 +33,19 @@
   margin-right: 14px;
 }
 
+.socials__link {
+  color: $color-grey-500;
+
+  &:hover,
+  &:focus {
+    color: $color-green-100;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .socials__link svg {
   @media (min-width: $tablet-min-width) {
     transform: scale(1.39);

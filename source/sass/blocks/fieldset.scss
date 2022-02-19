@@ -45,6 +45,7 @@
   right: 14px;
   top: 50%;
   transform: translateY(-50%);
+  color: $color-dark-grey-700;
 }
 
 .fieldset__input-chars {
@@ -58,15 +59,6 @@
   text-transform: uppercase;
   border: 1px solid $color-grey-150;
 
-  &:invalid {
-    border-color: $color-status-error;
-    border-width: 2px;
-  }
-
-  &:invalid + svg * {
-    stroke: $color-status-error;
-  }
-
   &:hover {
     border-color: $color-grey-300;
   }
@@ -76,8 +68,17 @@
     border-width: 2px;
   }
 
-  &:focus + svg * {
-    stroke: $color-green-100;
+  &:invalid {
+    border-color: $color-status-error;
+    border-width: 2px;
+  }
+
+  &:invalid + svg {
+    color: $color-status-error;
+  }
+
+  &:focus:valid + svg {
+    color: $color-green-100;
   }
 
   &::placeholder {

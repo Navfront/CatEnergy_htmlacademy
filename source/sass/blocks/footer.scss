@@ -49,11 +49,20 @@
   @media (min-width: $tablet-min-width) {
     justify-content: flex-end;
   }
+
+  &:hover .footer__academy-icon,
+  &:focus .footer__academy-icon {
+    color: $color-green-100;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__academy-icon {
   margin-top: 2px;
-  fill: $color-grey-500;
+  color: $color-grey-500;
   width: 40px;
   height: 40px;
   margin-right: -6px;
