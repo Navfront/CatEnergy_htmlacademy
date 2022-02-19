@@ -41,12 +41,9 @@
 .site-navigation__top-wrapper {
   display: flex;
   align-items: center;
+  padding: 12px 20px 21px;
 
-  @media (max-width: $mobile-max-width) {
-    padding: 0 20px 11px;
-  }
-
-  @media (min-width: $desktop-min-width) {
+  @media (min-width: $tablet-min-width) {
     padding: 0;
   }
 }

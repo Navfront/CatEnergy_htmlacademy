@@ -2,13 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
 
-  &:hover,
-  &:focus {
+  &[href]:hover,
+  &[href]:focus {
     opacity: 0.8;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.6;
   }
 }
@@ -30,27 +31,18 @@
   }
 }
 
-.logo--icon {
-  &::before {
-    content: "";
-    width: 39px;
-    height: 38px;
-    padding: 30px 0;
-    background-image: url("../img/logos/logo-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+.logo__cat {
+  width: 39px;
+  height: 38px;
 
-    @media (min-width: $tablet-min-width) {
-      background-image: url("../img/logos/logo-tablet.svg");
-      width: 61px;
-      height: 50px;
-      margin-bottom: 4px;
-    }
+  @media (min-width: $tablet-min-width) {
+    width: 62px;
+    height: 50px;
+    margin-bottom: 4px;
+  }
 
-    @media (min-width: $desktop-min-width) {
-      width: 103px;
-      height: 59px;
-      background-image: url("../img/logos/logo-desktop.svg");
-    }
+  @media (min-width: $desktop-min-width) {
+    width: 103px;
+    height: 59px;
   }
 }
