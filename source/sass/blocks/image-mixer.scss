@@ -70,13 +70,16 @@
 }
 
 .image-mixer__controls {
-  padding-top: 33px;
-  min-height: 88px;
+  width: 100%;
+  padding: 32px 35px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (min-width: $tablet-min-width) {
     position: absolute;
     left: 50%;
-    bottom: 33px;
+    bottom: -4px;
     margin: 0 auto;
     transform: translateX(-50%);
     display: flex;
@@ -84,13 +87,91 @@
 
   @media (min-width: $desktop-min-width) {
     left: 59%;
-    top: 504px;
+    top: 468px;
     bottom: initial;
   }
 }
 
 .image-mixer__range {
+  width: 84px;
+  appearance: none;
+  background-color: $color-white;
+  border-radius: 6px;
+  padding: 3.5px 6px;
+  border: 1px solid $color-grey-300;
+
   @media (min-width: $tablet-min-width) {
-    width: 428px;
+    padding: 0;
+    width: 430px;
+    border: none;
+    background-color: $color-grey-70;
+  }
+}
+
+.image-mixer__range::-webkit-slider-runnable-track {
+  @media (min-width: $tablet-min-width) {
+    height: 6px;
+  }
+}
+
+.image-mixer__range::-webkit-slider-thumb {
+  cursor: pointer;
+  width: 50%;
+  height: 6px;
+  background-color: $color-green-100;
+  border-radius: 6px;
+  appearance: none;
+  transition: ease 0.3s;
+
+  @media (min-width: $tablet-min-width) {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 12px solid $color-white;
+    box-shadow: 0 0 0 1px $color-grey-70, 0 1px 3px $shadow;
+    transform-origin: center;
+    z-index: 99;
+    position: relative;
+    top: -13px;
+  }
+}
+
+.image-mixer__button {
+  cursor: pointer;
+  position: relative;
+  margin: 0 18px;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: $color-black;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0.5px;
+      bottom: -5px;
+      right: 0;
+      width: 100%;
+      height: 0;
+      border-bottom: 1px dotted $color-black;
+      opacity: 0.24;
+    }
+  }
+}
+
+.image-mixer__button--before {
+  margin-left: 23px;
+
+  @media (min-width: $tablet-min-width) {
+    margin-left: 15px;
+    margin-right: 25px;
   }
 }

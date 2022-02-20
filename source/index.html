@@ -261,20 +261,29 @@
             </div>
 
             <div class="image-mixer__controls">
-              <button type="button" class="image-mixer__before-button">
+              <button
+                type="button"
+                class="image-mixer__button image-mixer__button--before"
+              >
                 было
               </button>
               <label for="image-mixer__range" class="visually-hidden"
                 >Ползунок</label
               >
               <input
+                value="0"
+                min="0"
+                max="100"
                 type="range"
                 class="image-mixer__range"
                 name="image-mixer-range"
                 id="image-mixer__range"
               />
 
-              <button type="button" class="image-mixer__after-button">
+              <button
+                type="button"
+                class="image-mixer__button image-mixer__button--after"
+              >
                 стало
               </button>
             </div>
@@ -311,6 +320,7 @@
             "
           />
           <img
+            loading="lazy"
             class="contacts__map"
             src="./img/maps/location-m.png"
             width="320"
