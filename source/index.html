@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="favicon/180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="stylesheet" href="css/normalize.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body class="page__body">
@@ -16,13 +16,25 @@
       <nav class="site-navigation site-navigation--index container">
         <div class="site-navigation__top-wrapper">
           <a class="site-navigation__logo logo">
-            <img
-              class="logo__cat"
-              src="img/logos/cat-logo-adaptive.svg"
-              alt="cat"
-              width="71"
-              height="59"
-            />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                type="image/svg+xml"
+                srcset="img/logos/desktop-logo.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                type="image/svg+xml"
+                srcset="img/logos/tablet-logo.svg"
+              />
+              <img
+                class="logo__cat"
+                src="img/logos/mobile-logo.svg"
+                alt="Кот - супергерой"
+                width="35"
+                height="38"
+              />
+            </picture>
             <img
               class="logo__image"
               src="./img/logos/catenergy.svg"
@@ -345,21 +357,21 @@
           <li class="socials__item">
             <a href="#" class="socials__link">
               <svg width="23" height="16">
-                <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+                <use xlink:href="img/my_sprite.svg#icon-vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
             <a href="#" class="socials__link">
               <svg width="16" height="16">
-                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                <use xlink:href="img/my_sprite.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item socials__item--fb">
             <a href="#" class="socials__link">
               <svg width="22" height="22">
-                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                <use xlink:href="img/my_sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -370,11 +382,11 @@
         >
           HTML Academy
           <svg class="footer__academy-icon" width="27" height="34">
-            <use xlink:href="img/sprite.svg#icon-academy"></use>
+            <use xlink:href="img/my_sprite.svg#icon-academy"></use>
           </svg>
         </a>
       </div>
     </footer>
-    <script src="./js/site-navigation.js"></script>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>
