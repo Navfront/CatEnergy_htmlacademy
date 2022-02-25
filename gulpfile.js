@@ -177,11 +177,10 @@ const watcher = () => {
 const build = gulp.series(
   clean,
   copy,
-  // copyImages,
   optimizeImages,
   gulp.parallel(styles, html, scripts, sprite, createWebp)
 );
 
 exports.build = build;
 
-exports.default = gulp.parallel(styles, watcher, server);
+exports.default = gulp.series(build, gulp.parallel(server, watcher));
