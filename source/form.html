@@ -15,13 +15,7 @@
       <nav class="site-navigation container">
         <div class="site-navigation__top-wrapper">
           <a href="index.html" class="site-navigation__logo logo">
-            <img
-              class="logo__cat"
-              src="img/logos/cat-logo-adaptive.svg"
-              alt="cat"
-              width="71"
-              height="59"
-            />
+            <img class="logo__cat" src="img/logos/cat-logo-adaptive.svg" alt="cat" width="71" height="59" />
             <img
               class="logo__image"
               src="./img/logos/catenergy.svg"
@@ -30,11 +24,7 @@
               alt="Логотип компании Cat Energy"
             />
           </a>
-          <button
-            type="button"
-            class="site-navigation__button-burger button-burger"
-            aria-label="открыть-закрыть меню"
-          >
+          <button type="button" class="site-navigation__button-burger button-burger" aria-label="открыть-закрыть меню">
             <span class="button-burger__icon button-burger__icon--close"></span>
           </button>
         </div>
@@ -44,16 +34,10 @@
             <a href="index.html" class="site-navigation__link">Главная</a>
           </li>
           <li class="site-navigation__item">
-            <a href="catalog.html" class="site-navigation__link"
-              >Каталог продукции</a
-            >
+            <a href="catalog.html" class="site-navigation__link">Каталог продукции</a>
           </li>
           <li class="site-navigation__item">
-            <a
-              href="form.html"
-              class="site-navigation__link site-navigation__link--current"
-              >Подбор программы</a
-            >
+            <a href="form.html" class="site-navigation__link site-navigation__link--current">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -67,11 +51,7 @@
             Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
         </div>
-        <form
-          class="questionnaire__form form"
-          action="https://echo.htmlacademy.ru"
-          method="post"
-        >
+        <form class="questionnaire__form form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__cat-data fieldset" role="group">
             <h3 class="visually-hidden">Параметры вашего питомца</h3>
             <label class="fieldset__label"
@@ -82,28 +62,16 @@
                 name="pet-name"
                 type="text"
                 placeholder="барсик"
+                pattern="\w|\D+?"
                 required
             /></label>
             <label class="fieldset__label"
               >Вес (кг):*
-              <input
-                class="fieldset__input-chars"
-                size="7"
-                name="pet-weight"
-                type="text"
-                placeholder="7"
-                required
-              />
+              <input class="fieldset__input-chars" size="7" name="pet-weight" type="number" placeholder="7" required />
             </label>
             <label class="fieldset__label"
               >Возраст&nbsp;(лет):
-              <input
-                class="fieldset__input-chars"
-                size="7"
-                name="pet-age"
-                type="text"
-                placeholder="7"
-              />
+              <input class="fieldset__input-chars" size="7" name="pet-age" type="number" placeholder="7" />
             </label>
           </div>
           <div class="form__cat-program fieldset" role="group">
@@ -130,14 +98,9 @@
               name="program"
               id="program-advise"
             />
-            <label class="fieldset__label" for="program-advise"
-              >Не знаю (Нужен ваш совет)</label
-            >
+            <label class="fieldset__label" for="program-advise">Не знаю (Нужен ваш совет)</label>
           </div>
-          <div
-            class="form__owner-contacts fieldset fieldset--desktop-grid"
-            role="group"
-          >
+          <div class="form__owner-contacts fieldset fieldset--desktop-grid" role="group">
             <h3 class="fieldset__heading-decored heading-decored">
               <span class="heading-decored__line"></span>
               Контактные данные (владельца кота)
@@ -150,6 +113,7 @@
                 name="owner-email"
                 type="email"
                 placeholder="kuklachev@gmail.com"
+                pattern="^\S+@\S+\.\S+$"
                 required
               />
               <svg width="19" height="14">
@@ -163,6 +127,7 @@
                 class="fieldset__input-chars"
                 size="7"
                 type="tel"
+                pattern="^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$"
                 placeholder="8 (960) 900-60-90"
                 required
               />
@@ -177,9 +142,7 @@
               Комментарий
             </h3>
 
-            <label for="comments-area" class="visually-hidden"
-              >Оставьте свой комментарий</label
-            >
+            <label for="comments-area" class="visually-hidden">Оставьте свой комментарий</label>
             <textarea
               class="fieldset__textarea"
               name="owner-comments"
@@ -187,10 +150,7 @@
               placeholder="Расскажите обо всех повадках кота"
             ></textarea>
           </div>
-          <div
-            class="form__additionally fieldset fieldset--checkboxes"
-            role="group"
-          >
+          <div class="form__additionally fieldset fieldset--checkboxes" role="group">
             <h3 class="fieldset__heading-decored heading-decored">
               <span class="heading-decored__line"></span>
               Дополнительно
@@ -204,9 +164,7 @@
               id="add-sweetener"
               checked
             />
-            <label class="fieldset__label" for="add-sweetener"
-              >сахарозаменитель</label
-            >
+            <label class="fieldset__label" for="add-sweetener">сахарозаменитель</label>
             <input
               class="fieldset__toggler fieldset__toggler--checkbox visually-hidden"
               type="checkbox"
@@ -255,19 +213,11 @@
         <picture>
           <source
             media="(min-width: 1280px)"
-            srcset="
-              ./img/maps/location-d.png,
-              ./img/maps/location-d@2x.png 2x,
-              ./img/maps/location-d@3x.png 3x
-            "
+            srcset="./img/maps/location-d.png, ./img/maps/location-d@2x.png 2x, ./img/maps/location-d@3x.png 3x"
           />
           <source
             media="(min-width: 768px)"
-            srcset="
-              ./img/maps/location-t.png,
-              ./img/maps/location-t@2x.png 2x,
-              ./img/maps/location-t@3x.png 3x
-            "
+            srcset="./img/maps/location-t.png, ./img/maps/location-t@2x.png 2x, ./img/maps/location-t@3x.png 3x"
           />
           <img
             loading="lazy"
@@ -314,10 +264,7 @@
             </a>
           </li>
         </ul>
-        <a
-          href="https://htmlacademy.ru/intensive/adaptive"
-          class="footer__academy-link font-form font-form--academy"
-        >
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__academy-link font-form font-form--academy">
           HTML Academy
           <svg class="footer__academy-icon" width="27" height="34">
             <use xlink:href="img/my_sprite.svg#icon-academy"></use>
