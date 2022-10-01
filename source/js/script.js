@@ -11,6 +11,8 @@ const desktopQuery = window.matchMedia('(min-width: 1280px)')
 const tabletQuery = window.matchMedia('(min-width: 768px) and (max-width: 1279px)')
 const mobileQuery = window.matchMedia('(max-width: 767px)')
 
+
+
 if(imageMixer){
   const defaultClip = {
     left: window.getComputedStyle(leftImage).clip,
@@ -34,6 +36,14 @@ if(imageMixer){
       }
       }).join(', ')})`
     return result
+  }
+
+  if (mobileQuery.matches) {
+    imageMixer.step = '100'
+    imageMixer.value = '0'
+    defaultClip.isMobile = true
+  } else {
+    imageMixer.value = '50'
   }
 
   imageMixer.addEventListener("input", (evt) => {
