@@ -67,11 +67,26 @@
             /></label>
             <label class="fieldset__label"
               >Вес (кг):*
-              <input class="fieldset__input-chars" size="7" name="pet-weight" type="number" placeholder="7" required />
+              <input
+                class="fieldset__input-chars"
+                size="7"
+                name="pet-weight"
+                type="number"
+                placeholder="7"
+                required
+                pattern="\d+\d?"
+              />
             </label>
             <label class="fieldset__label"
               >Возраст&nbsp;(лет):
-              <input class="fieldset__input-chars" size="7" name="pet-age" type="number" placeholder="7" />
+              <input
+                class="fieldset__input-chars"
+                size="7"
+                name="pet-age"
+                type="number"
+                placeholder="7"
+                pattern="\d+\d?"
+              />
             </label>
           </div>
           <div class="form__cat-program fieldset" role="group">
