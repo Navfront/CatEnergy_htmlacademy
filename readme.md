@@ -1,9 +1,30 @@
-# Проект «CatEnergy»
+# «CatEnergy Project»
+
+
+
 ## Проект по верстке от HTML Academy по курсу "Фронтенд-разработчик"
 (средняя сложность / отзывчиво-адаптивный)
 
+<img src="ca-d.jpg" width="150" height="116" alt="десктопная версия проекта">
+<img src="ca-t.jpg" width="110" height="116" alt="планшетная версия проекта">
+<img src="ca-m.jpg" width="70" height="116" alt="мобильная версия проекта">
+
+<b>Сайт из трех страниц: индекс, каталог, форма</b>.
+
 
 ### Ссылка на GH-PAGES: https://navfront.github.io/CatEnergy_htmlacademy/
+
+<br>
+ <b>Верстка с использованием:</b>
+
+- FIGMA
+- GULP
+- SASS
+- BEM
+- WEBP
+- RETINA-images
+- SVG-sprites
+- и тд.
 
 <br>
 
