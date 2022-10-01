@@ -3,11 +3,13 @@
   "private": true,
   "description": "Личный проект «CatEnergy» от HTML Academy",
   "author": "Nazhiganov Andrey Vladimirovich",
-  "repository": {"url": "https://github.com/Navfront/CatEnergy_htmlacademy"},
+  "repository": {
+    "url": "https://github.com/Navfront/CatEnergy_htmlacademy"
+  },
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
-    "autoprefixer": "10.2.5",
-    "browser-sync": "2.26.14",
+    "autoprefixer": "^10.2.5",
+    "browser-sync": "^2.26.14",
     "del": "6.0.0",
     "gh-pages": "4.0.0",
     "gulp": "4.0.2",
@@ -15,7 +17,7 @@
     "gulp-htmlmin": "5.0.1",
     "gulp-imagemin": "7.1.0",
     "gulp-plumber": "1.2.1",
-    "gulp-postcss": "9.0.0",
+    "gulp-postcss": "^9.0.0",
     "gulp-rename": "2.0.0",
     "gulp-sass": "4.1.0",
     "gulp-sourcemaps": "3.0.0",
