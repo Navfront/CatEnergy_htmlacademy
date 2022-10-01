@@ -54,7 +54,7 @@ if(imageMixer){
     } else {
       leftImage.style.clip = ''
       rightImage.style.clip = ''
-      if(value < 50){
+      if(value >= 50){
         leftImage.style.display = 'none'
         rightImage.style.display = 'block'
       }
